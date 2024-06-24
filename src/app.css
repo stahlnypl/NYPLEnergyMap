@@ -1,0 +1,191 @@
+.toggle input[type=checkbox] {
+    display: none;
+  }
+  .slide-toggle {
+    display: block;
+    position: relative;
+    flex: none;
+    width: 26px;
+    height: 16px;
+    border-radius: 15px;
+    background-color: #d7d2cb;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    z-index: 1;
+    margin: 10px;
+  }
+  .slide-toggle::before,
+  .slide-toggle::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 1px;
+    border-radius: 15px;
+    height: 14px;
+    background-color: #fff;
+    transform: translate3d(0, 0, 0);
+    transition: 0.2s cubic-bezier(0, 1.1, 1, 1.1);
+  }
+  .slide-toggle::before {
+    z-index: -1;
+    width: 24px;
+    right: 1px;
+    transform: scale(1);
+  }
+  .slide-toggle::after {
+    z-index: 1;
+    width: 14px;
+    left: 1px;
+    box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
+  }
+  input:checked + .slide-toggle {
+    background-color: #069cd8;
+  }
+  input:checked + .slide-toggle::before {
+    transform: scale(0);
+  }
+  input:checked + .slide-toggle::after {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  /* Bronx */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-header.leaflet-layerstree-header-pointer {
+    border-color: #673165;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: black;
+    padding-left: 5px;
+    border-style: solid;
+  }
+
+/* West Bronx */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-header.leaflet-layerstree-header-pointer {
+    background-color: #673165;
+    color: white;
+    padding-left: 10px;
+  }
+
+/* West Bronx Branches */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children {
+    background: #daa9e3
+  }
+
+/* Central Bronx */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(2) > div.leaflet-layerstree-header.leaflet-layerstree-header-pointer {
+    background-color: #8a1a9c;
+    padding-left: 10px;
+    color: white;
+
+  }
+
+/* Central Bronx Branches */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(2) > div.leaflet-layerstree-children {
+    background: #daa9e3
+  }
+
+/* East Bronx */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(3) > div.leaflet-layerstree-header.leaflet-layerstree-header-pointer {
+    background-color: #C297B8;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 10px;
+    padding-bottom:3px;
+    color: white;
+  }
+
+  /* East Bronx Branches */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(3) > div.leaflet-layerstree-children {
+    background: #daa9e3
+  }
+
+  /* Manhattan */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(2) > div.leaflet-layerstree-header.leaflet-layerstree-header-pointer {
+    border-color: #004b98;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: black;
+    padding-left: 5px;
+    border-style: solid;
+    margin-top:10px;
+  }
+
+  /* West Manhattan */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(2) > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-header.leaflet-layerstree-header-pointer {
+    background-color: #004b98;
+    color: white;
+    padding-left: 10px;
+    padding-right: 3px;
+  }
+
+  /* West Manhattan Branches */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(2) > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children {
+    background-color: #b1c9ea;
+  }
+  
+  /* East Manhattan */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(2) > div.leaflet-layerstree-children > div:nth-child(2) > div.leaflet-layerstree-header.leaflet-layerstree-header-pointer {
+    background-color: #005EB3;
+    padding-left: 10px;
+    padding-right: 3px;
+    color: white;
+  }
+
+    /* East Manhattan Branches */
+    div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(2) > div.leaflet-layerstree-children > div:nth-child(2) > div.leaflet-layerstree-children {
+      background-color: #b1c9ea;
+    }
+
+    /* Lower Manhattan */
+    div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(2) > div.leaflet-layerstree-children > div:nth-child(3) > div.leaflet-layerstree-header.leaflet-layerstree-header-pointer {
+
+      background-color: #0071CE;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding-left: 10px;
+      padding-bottom:3px;
+      padding-right: 3px;
+      color: white;
+    }
+
+    /* Lower Manhattan Branches */
+    div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(2) > div.leaflet-layerstree-children > div:nth-child(3) > div.leaflet-layerstree-children {
+            background-color: #b1c9ea;
+    }
+
+      /* Staten Island */
+      div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(3) > div.leaflet-layerstree-header.leaflet-layerstree-header-pointer {
+      border-color: #497629;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-style: solid;
+    margin-top:10px;
+  }
+
+  /* Staten Island */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(3) > div.leaflet-layerstree-children {
+    background-color: #c5d5a5;
+  }
+
+  /* Admin */
+  div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(4) > div.leaflet-layerstree-header.leaflet-layerstree-header-pointer {
+    border-color: #d0343a;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: black;
+    padding-left: 5px;
+    border-style: solid;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+
+  /* Admin Branches */
+div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(1) > div.leaflet-layerstree-children > div:nth-child(4) > div.leaflet-layerstree-children {
+  background-color: #e9b9a7;
+  }
