@@ -142,7 +142,7 @@
 			var hvacCheck = L.featureGroup();
 			var noSites = L.featureGroup();
 
-			// Asyncronous Fucction to Call Supabase Library Data
+			// Asyncronous Function to Call Supabase Library Data
 			async function fetchData() {
 				const { data } = await supabase.from('EnergyDatabase').select('*');
 				// console.log(data);
@@ -321,10 +321,6 @@
 						markers[e.code].addTo(Solar_Check);
 					}
 
-					if (e.hvac_inspections === 'JTS') {
-						markers[e.code].addTo(hvacCheck);
-					}
-
 					// // Selection of the 'Close' Button
 					// var ehsCheckClick = document.querySelector(
 					// 	'div.leaflet-top.leaflet-right > div > section > div.leaflet-control-layers-overlays > div.leaflet-layerstree-children > div:nth-child(2) > div.leaflet-layerstree-children > div:nth-child(2) > div > span:nth-child(2) > label > input'
@@ -339,24 +335,23 @@
 					    <tr>
 					      <th colspan="2" style="padding-bottom:1em; font-size:large;">${e.name}</th>
 					    </tr>
+						</thead>
+						<table>
 						<tr>
-
-					      <td style="padding-bottom: 1em; text-align: right">Code: </td>
-					      <td style="padding-bottom: 1em">${e.code}</td>
+					      <td style="text-align: left">Code: </td>
+					      <td style="text-align: left">${e.code}</td>
 					    </tr>
 						<tr>
-					      <td style="text-align: right">Network: </td>
-					      <td>${e.network}</td>
+					      <td style="text-align: left">Network: </td>
+					      <td style="text-align: left">${e.network}</td>
 					    </tr>
 						<tr>
-					      <td style="padding-bottom: 1em; text-align: right">Status: </td>
-					      <td style="padding-bottom: 1em">${e.status}</td>
+					      <td style="padding-bottom: 1em; text-align: left">Status: </td>
+					      <td style="padding-bottom: 1em; text-align: left">${e.status}</td>
 					    </tr>
-					  </thead>
+					  </table>
+					  <table>
 					  <tbody>
-						<tr>
-							<td style="text-align: right">LED Information: </td>
-					    <tr/>
 						<tr>
 							<td style="text-align: right">LED Installation: </td>
 							<td>${e.LED_Complete}</td>
@@ -368,9 +363,6 @@
 						<tr>
 							<td style="text-align: right">LED Fiscal Year: </td>
 							<td>${e.LED_FY}</td>
-					    <tr/>
-						<tr>
-							<td style="text-align: right">BMS Information: </td>
 					    <tr/>
 						<tr>
 							<td style="text-align: right">BMS Installation: </td>
@@ -385,18 +377,12 @@
 							<td>${e.BMS_FY}</td>
 					    <tr/>
 						<tr>
-							<td style="text-align: right">Electrification Information: </td>
-					    <tr/>
-						<tr>
 							<td style="text-align: right">Electric Installation: </td>
 							<td>${e.Electric_Complete}</td>
 					    <tr/>
 						<tr>
 							<td style="text-align: right">Electric Metered: </td>
 							<td>${e.Electric_Metered}</td>
-					    <tr/>
-						<tr>
-							<td style="text-align: right">Solar Information: </td>
 					    <tr/>
 						<tr>
 							<td style="text-align: right">Solar Installation: </td>
@@ -633,7 +619,7 @@
 							selectAllCheckbox: false,
 							collapsed: false,
 							children: [
-								{ label: '', layer: noSites, radioGroup: 'radio' },
+								{ label: 'Clear Selection', layer: noSites, radioGroup: 'radio' },
 								{ label: 'LED', layer: LED_check, radioGroup: 'radio' },
 								{ label: 'BMS', layer: BMS_Check, radioGroup: 'radio' },
 								{ label: 'Electrification', layer: electric_Check, radioGroup: 'radio' },
@@ -765,7 +751,8 @@
 				})
 				.addTo(map);
 		}
-	});
+
+    });
 
 	// Function to Destroy on Close
 	onDestroy(async () => {
@@ -780,6 +767,12 @@
 	<div bind:this={mapElement} />
 	<div class="header-bg">
 		<span>NYPL Energy & Sustainability Map</span>
+	</div>
+	<div class="sidebar">
+		Sites Selected:
+		
+		<br />
+
 	</div>
 	<div class="sidebar">
 		Longitude: {lng.toFixed(4)} | Latitude: {lat.toFixed(4)} | Zoom: {zoom.toFixed(2)}
