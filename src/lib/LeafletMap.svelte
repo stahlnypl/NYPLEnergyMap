@@ -803,7 +803,7 @@
 		position: fixed;
 		display: flex;
 		top: 1rem;
-		left: 3rem;
+		left: 5rem;
 		background: rgba(255, 255, 255, 0.2);
 		box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 		backdrop-filter: blur(20px);
@@ -847,8 +847,8 @@
 		font-family: monospace;
 		z-index: 500;
 		position: absolute;
-		top: 1rem;
-		right: 12rem;
+		top: .5rem;
+		right: 10rem;
 		margin: 12px;
 		border-radius: 4px;
 		height: auto;
