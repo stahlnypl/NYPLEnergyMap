@@ -20,6 +20,10 @@
 	let mapElement;
 	let map;
 	let lng, lat, zoom;
+	let activeMarkers, allSiteMarkers;
+
+	activeMarkers = ' ';
+	allSiteMarkers = 93;
 
 	// Assigning Initial View Values //
 	lng = -74.0;
@@ -139,7 +143,6 @@
 			var BMS_Check = L.featureGroup();
 			var electric_Check = L.featureGroup();
 			var Solar_Check = L.featureGroup();
-			var hvacCheck = L.featureGroup();
 			var noSites = L.featureGroup();
 
 			// Asyncronous Function to Call Supabase Library Data
@@ -313,7 +316,6 @@
 					}
 
 					if (e.Electric_Complete == 'TRUE') {
-						console.log(e.Electric_Complete);
 						markers[e.code].addTo(electric_Check);
 					}
 
@@ -406,14 +408,7 @@
 						// console.log(elm);
 						var Radiobtn = document.querySelectorAll('input[name="radio"]');
 
-						Radiobtn[3].addEventListener('input', () => {
-							if (e.ehs_inspection === 'JTS') {
-								markers[e.code]._icon.style.filter =
-									'brightness(0) saturate(100%) invert(58%) sepia(28%) saturate(257%) hue-rotate(242deg) brightness(83%) contrast(80%)';
-								// markers[e.code]._icon.style.backgroundImage="url(/Users/jtylerstahl/Downloads/NYPLEHSMAP-main/static/user.svg)"
-								// console.log(markers[e.code]._icon.backgroundImage);
-							}
-						});
+						Radiobtn[3].addEventListener('input', () => {});
 
 						// console.log(Radiobtn[0]);
 					});
@@ -750,9 +745,23 @@
 					initialZoomLevel: 18
 				})
 				.addTo(map);
-		}
 
-    });
+
+
+			// Function for Developer Element //
+			function updateActive() {
+				allSiteMarkers = allSites.getLayers().length;
+				activeMarkers = Object.keys(map._targets).length;
+				activeMarkers -= 1;
+				// console.log('Active Markers: ', activeMarkers);
+				// console.log('All Branches: ', allSiteMarkers);
+			}
+
+			window.addEventListener('click', () => {
+				updateActive();
+			});
+		}
+	});
 
 	// Function to Destroy on Close
 	onDestroy(async () => {
@@ -763,17 +772,18 @@
 	});
 </script>
 
+<div class="countSidebar">
+	Sites Selected:
+	<br />
+	{activeMarkers} / {allSiteMarkers}
+</div>
+
 <section>
 	<div bind:this={mapElement} />
 	<div class="header-bg">
 		<span>NYPL Energy & Sustainability Map</span>
 	</div>
-	<div class="sidebar">
-		Sites Selected:
-		
-		<br />
 
-	</div>
 	<div class="sidebar">
 		Longitude: {lng.toFixed(4)} | Latitude: {lat.toFixed(4)} | Zoom: {zoom.toFixed(2)}
 		<br />v: 0.0.1a
@@ -824,6 +834,21 @@
 		position: absolute;
 		bottom: 1%;
 		left: 1%;
+		margin: 12px;
+		border-radius: 4px;
+		height: auto;
+		line-height: 1.5;
+	}
+
+	.countSidebar {
+		background-color: rgba(35, 55, 75, 0.9);
+		color: #fff;
+		padding: 6px 12px;
+		font-family: monospace;
+		z-index: 500;
+		position: absolute;
+		top: 1rem;
+		right: 12rem;
 		margin: 12px;
 		border-radius: 4px;
 		height: auto;
