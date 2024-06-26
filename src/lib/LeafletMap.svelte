@@ -91,10 +91,6 @@
 				}
 			).addTo(map);
 
-			// var baseLayers = {
-			// 	'Dark Theme': darkTheme,
-			// 	'Light Theme': lightTheme
-			// };
 
 			// Event listener to Display Location Data in Developer Element
 			map.on('move', () => {
@@ -415,14 +411,14 @@
 				});
 
 				//... adding data in searchLayer ...
-				map.addControl(
-					new L.Control.Search({
-						layer: markersLayer,
-						initial: false,
-						zoom: 17,
-						marker: false
-					})
-				);
+				// map.addControl(
+				// 	new L.Control.Search({
+				// 		layer: markersLayer,
+				// 		initial: false,
+				// 		zoom: 17,
+				// 		marker: false
+				// 	})
+				// );
 
 				// Checking Marker ID
 				// console.log('Markers: ', markers, markers['SASB']);
@@ -786,8 +782,8 @@
 
 	<div class="sidebar">
 		Longitude: {lng.toFixed(4)} | Latitude: {lat.toFixed(4)} | Zoom: {zoom.toFixed(2)}
-		<br />v: 0.0.1a
-		<br />Last Updated: 6/24/2024
+		<br />v: 1.1.0
+		<br />Last Updated: 6/26/2024
 	</div>
 </section>
 
