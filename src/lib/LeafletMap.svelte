@@ -184,21 +184,21 @@
 
 				var HVI_Data = L.geoJSON(tractJsonData, {
 					style: function (feature) {
-						switch (feature.properties.HVI_Tier) {
-							case '1':
+						switch (feature.properties.HVI) {
+							case 1:
 								return { color: '#e9c213' };
-							case '2':
+							case 2:
 								return { color: '#ed9223' };
-							case '3':
+							case 3:
 								return { color: '#e75d1e' };
-							case '4':
+							case 4:
 								return { color: '#bd3f37' };
-							case '5':
+							case 5:
 								return { color: '#7f3835' };
 						}
 					},
 					weight: 0,
-					color: '#ffffff'
+					fillOpacity: .75
 				});
 			}
 
@@ -819,7 +819,7 @@
 
 	<div class="sidebar">
 		Longitude: {lng.toFixed(4)} | Latitude: {lat.toFixed(4)} | Zoom: {zoom.toFixed(2)}
-		<br />v: 1.2.0
+		<br />v: 1.2.1
 		<br />Last Updated: 6/27/2024
 	</div>
 </section>

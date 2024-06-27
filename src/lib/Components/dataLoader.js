@@ -1,6 +1,6 @@
 export async function loadTractData() {
     try {
-        const response = await fetch('https://raw.githubusercontent.com/stahlnypl/NYPLEnergyMap/main/static/Data/images/NYCCensusTractData.geojson');
+        const response = await fetch('https://raw.githubusercontent.com/stahlnypl/NYPLEnergyMap/main/static/Data/images/CensusTractbyBranch.geojson');
         const data = await response.json();
         return data;
     } catch (error) {
