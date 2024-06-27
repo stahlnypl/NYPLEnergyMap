@@ -4,6 +4,7 @@
 	import { createClient } from '@supabase/supabase-js';
 	import { PUBLIC_SUPABASE_ANON_KEY } from '$env/static/public';
 	import { PUBLIC_MAPBOX_ACCESS_TOKEN } from '$env/static/public';
+	import { loadTractData } from './Components/dataLoader.js';
 
 	// Initialize Supabase client
 	const supabaseUrl = 'https://gajoxvjlmnnkkrovzwcb.supabase.co';
@@ -91,7 +92,6 @@
 				}
 			).addTo(map);
 
-
 			// Event listener to Display Location Data in Developer Element
 			map.on('move', () => {
 				updateData();
@@ -176,6 +176,31 @@
 				}
 				lastZoom = zoom;
 			});
+
+			const tractJsonData = await loadTractData();
+
+			if (tractJsonData) {
+				console.log(tractJsonData);
+
+				var HVI_Data = L.geoJSON(tractJsonData, {
+					style: function (feature) {
+						switch (feature.properties.HVI_Tier) {
+							case '1':
+								return { color: '#e9c213' };
+							case '2':
+								return { color: '#ed9223' };
+							case '3':
+								return { color: '#e75d1e' };
+							case '4':
+								return { color: '#bd3f37' };
+							case '5':
+								return { color: '#7f3835' };
+						}
+					},
+					weight: 0,
+					color: '#ffffff'
+				});
+			}
 
 			// Asyncronous Function to create Markers for Data
 			async function addMarkersToMap(map, libs) {
@@ -385,6 +410,14 @@
 						<tr>
 							<td style="text-align: right">Solar Installation: </td>
 							<td>${e.Solar_Complete}</td>
+					    <tr/>
+						<tr>
+							<td style="text-align: right">HVI Tier: </td>
+							<td>${e.HVI_Tier}</td>
+					    <tr/>
+						<tr>
+							<td style="text-align: right">EJ Zone: </td>
+							<td>${e.EJ_Zone}</td>
 					    <tr/>
 
 
@@ -610,6 +643,12 @@
 							selectAllCheckbox: false,
 							collapsed: false,
 							children: [
+								{
+									label: 'HVI',
+									selectAllCheckbox: false,
+									collapsed: true,
+									children: [{ label: 'Heat Vulnerability Index', layer: HVI_Data }]
+								},
 								{ label: 'Clear Selection', layer: noSites, radioGroup: 'radio' },
 								{ label: 'LED', layer: LED_check, radioGroup: 'radio' },
 								{ label: 'BMS', layer: BMS_Check, radioGroup: 'radio' },
@@ -742,8 +781,6 @@
 				})
 				.addTo(map);
 
-
-
 			// Function for Developer Element //
 			function updateActive() {
 				allSiteMarkers = allSites.getLayers().length;
@@ -782,8 +819,8 @@
 
 	<div class="sidebar">
 		Longitude: {lng.toFixed(4)} | Latitude: {lat.toFixed(4)} | Zoom: {zoom.toFixed(2)}
-		<br />v: 1.1.0
-		<br />Last Updated: 6/26/2024
+		<br />v: 1.2.0
+		<br />Last Updated: 6/27/2024
 	</div>
 </section>
 
@@ -843,7 +880,7 @@
 		font-family: monospace;
 		z-index: 500;
 		position: absolute;
-		top: .5rem;
+		top: 0.5rem;
 		right: 10rem;
 		margin: 12px;
 		border-radius: 4px;

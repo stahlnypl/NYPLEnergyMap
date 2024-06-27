@@ -24,7 +24,8 @@
         "PUMA": "4121",
         "Shape__Area": 1842974.2476043699,
         "Shape__Length": 10832.877284304999,
-        "Branch": "Battery Park City "
+        "Branch": "Battery Park City",
+        "HVI_Value": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -130,7 +131,8 @@
         "PUMA": "4103,4103,4103,4103,4103,4103,4103",
         "Shape__Area": 11280929.675689692,
         "Shape__Length": 39222.177761093684,
-        "Branch": "Seward Park,Seward Park,Seward Park,Seward Park,Seward Park,Seward Park,Seward Park"
+        "Branch": "Seward Park,Seward Park,Seward Park,Seward Park,Seward Park,Seward Park,Seward Park",
+        "HVI_Value": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -328,7 +330,8 @@
         "PUMA": "4103,4103,4103,4121,4121,4121,4121,4121,4121,4121",
         "Shape__Area": 15824554.038940426,
         "Shape__Length": 52140.098010486239,
-        "Branch": "Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street"
+        "Branch": "Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -453,7 +456,8 @@
         "PUMA": "4103,4103,4103,4103,4103,4103,4103",
         "Shape__Area": 9238820.8705596924,
         "Shape__Length": 33982.855920632173,
-        "Branch": "Hamilton Fish Market,Hamilton Fish Market,Hamilton Fish Market,Hamilton Fish Market,Hamilton Fish Market,Hamilton Fish Market,Hamilton Fish Market"
+        "Branch": "Hamilton Fish Market,Hamilton Fish Market,Hamilton Fish Market,Hamilton Fish Market,Hamilton Fish Market,Hamilton Fish Market,Hamilton Fish Market",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -733,7 +737,8 @@
         "PUMA": "4103,4103,4103,4103,4103",
         "Shape__Area": 9006080.6108093299,
         "Shape__Length": 31477.808106097171,
-        "Branch": "Thompkins Square,Thompkins Square,Thompkins Square,Thompkins Square,Thompkins Square"
+        "Branch": "Thompkins Square,Thompkins Square,Thompkins Square,Thompkins Square,Thompkins Square",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -978,7 +983,8 @@
         "PUMA": "4121,4121,4121,4121,4121,4121,4121,4121",
         "Shape__Area": 22628198.313446052,
         "Shape__Length": 78577.707594255029,
-        "Branch": "New Amsterdam,New Amsterdam,New Amsterdam,New Amsterdam,New Amsterdam,New Amsterdam,New Amsterdam,New Amsterdam"
+        "Branch": "New Amsterdam,New Amsterdam,New Amsterdam,New Amsterdam,New Amsterdam,New Amsterdam,New Amsterdam,New Amsterdam",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -1749,7 +1755,8 @@
         "PUMA": "4121,4121,4121,4121",
         "Shape__Area": 10070158.48596191,
         "Shape__Length": 32382.83009335697,
-        "Branch": "Hudson Park,Hudson Park,Hudson Park,Hudson Park"
+        "Branch": "Hudson Park,Hudson Park,Hudson Park,Hudson Park",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -1927,7 +1934,8 @@
         "PUMA": "4121,4121,4121,4121",
         "Shape__Area": 9709662.2163238395,
         "Shape__Length": 36315.378369644299,
-        "Branch": "Battery Park City,Battery Park City,Battery Park City,Battery Park City"
+        "Branch": "Battery Park City,Battery Park City,Battery Park City,Battery Park City",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2526,7 +2534,8 @@
         "PUMA": "4103,4103,4103,4103,4121",
         "Shape__Area": 6197690.6368103111,
         "Shape__Length": 24475.157121648212,
-        "Branch": "Ottendorfer,Ottendorfer,Ottendorfer,Ottendorfer,Ottendorfer"
+        "Branch": "Ottendorfer,Ottendorfer,Ottendorfer,Ottendorfer,Ottendorfer",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2600,7 +2609,8 @@
         "PUMA": "4165,4165,4165,4165,4165,4165,4165,4165,4165,4165",
         "Shape__Area": 21844607.577438362,
         "Shape__Length": 67326.17554605013,
-        "Branch": "Epiphany,Epiphany,Epiphany,Epiphany,Epiphany,Epiphany,Epiphany,Epiphany,Epiphany,Epiphany"
+        "Branch": "Epiphany,Epiphany,Epiphany,Epiphany,Epiphany,Epiphany,Epiphany,Epiphany,Epiphany,Epiphany",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3097,7 +3107,8 @@
         "PUMA": "4165,4121,4121,4121,4121,4121,4104,4104,4121,4121,4121",
         "Shape__Area": 20886583.918685906,
         "Shape__Length": 68434.402734869262,
-        "Branch": "Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market"
+        "Branch": "Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market,Jefferson Market",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3354,7 +3365,8 @@
         "PUMA": "4165,4165,4104,4104,4104,4104,4165,4104,4104,4165,4165,4104,4104,4104,4104",
         "Shape__Area": 33184876.917556774,
         "Shape__Length": 105441.11940196097,
-        "Branch": "Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg"
+        "Branch": "Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg,Muhlenberg",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3747,7 +3759,8 @@
         "PUMA": "4165,4165,4165,4165",
         "Shape__Area": 5665558.5747680636,
         "Shape__Length": 19602.29424023402,
-        "Branch": "Kips Bay,Kips Bay,Kips Bay,Kips Bay"
+        "Branch": "Kips Bay,Kips Bay,Kips Bay,Kips Bay",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -3816,7 +3829,8 @@
         "PUMA": "4165,4165,4165,4165,4165,4165,4165,4165,4165,4165",
         "Shape__Area": 17000702.60812379,
         "Shape__Length": 56201.677172257449,
-        "Branch": "SNFL,SNFL,SNFL,SNFL,SNFL,SNFL,SNFL,SNFL,SNFL,SNFL"
+        "Branch": "SNFL,SNFL,SNFL,SNFL,SNFL,SNFL,SNFL,SNFL,SNFL,SNFL",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4076,7 +4090,8 @@
         "PUMA": "4165,4165,4165,4165,4165,4165,4165,4165,4165",
         "Shape__Area": 16211282.603347771,
         "Shape__Length": 49914.160045390046,
-        "Branch": "53rd Street,53rd Street,53rd Street,53rd Street,53rd Street,53rd Street,53rd Street,53rd Street,53rd Street"
+        "Branch": "53rd Street,53rd Street,53rd Street,53rd Street,53rd Street,53rd Street,53rd Street,53rd Street,53rd Street",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4192,7 +4207,8 @@
         "PUMA": "4165,4165,4165,4165,4165,4165,4108,4108,4108,4165,4108,4165",
         "Shape__Area": 14568687.752120975,
         "Shape__Length": 53318.879528919584,
-        "Branch": "58th Street,58th Street,58th Street,58th Street,58th Street,58th Street,58th Street,58th Street,58th Street,58th Street,58th Street,58th Street"
+        "Branch": "58th Street,58th Street,58th Street,58th Street,58th Street,58th Street,58th Street,58th Street,58th Street,58th Street,58th Street,58th Street",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4313,7 +4329,8 @@
         "PUMA": "4165,4104,4104,4104,4104,4104,4104,4104,4104,4104,4104,4104",
         "Shape__Area": 22398284.38133239,
         "Shape__Length": 84113.767657680059,
-        "Branch": "Columbus,Columbus,Columbus,Columbus,Columbus,Columbus,Columbus,Columbus,Columbus,Columbus,Columbus,Columbus"
+        "Branch": "Columbus,Columbus,Columbus,Columbus,Columbus,Columbus,Columbus,Columbus,Columbus,Columbus,Columbus,Columbus",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4616,7 +4633,8 @@
         "PUMA": "4108,4108,4108,4108,4108,4108,4108",
         "Shape__Area": 11083016.217605602,
         "Shape__Length": 36375.396233005704,
-        "Branch": "67th Street,67th Street,67th Street,67th Street,67th Street,67th Street,67th Street"
+        "Branch": "67th Street,67th Street,67th Street,67th Street,67th Street,67th Street,67th Street",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4703,7 +4721,8 @@
         "PUMA": "4108,4108,4108,4108,4108,4108,4108,4108,4108",
         "Shape__Area": 13527904.839370711,
         "Shape__Length": 44747.848163214432,
-        "Branch": "Yorkville,Yorkville,Yorkville,Yorkville,Yorkville,Yorkville,Yorkville,Yorkville,Yorkville"
+        "Branch": "Yorkville,Yorkville,Yorkville,Yorkville,Yorkville,Yorkville,Yorkville,Yorkville,Yorkville",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4789,7 +4808,8 @@
         "PUMA": "4108,4108,4108,4108,4108,4108,4108,4108",
         "Shape__Area": 5314794.931274415,
         "Shape__Length": 28242.167752080801,
-        "Branch": "Webster,Webster,Webster,Webster,Webster,Webster,Webster,Webster"
+        "Branch": "Webster,Webster,Webster,Webster,Webster,Webster,Webster,Webster",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4865,7 +4885,8 @@
         "PUMA": "4107,4107,4107,4107,4107,4107,4107,4107,4107,4107,4107",
         "Shape__Area": 15797386.8904419,
         "Shape__Length": 57414.545893085313,
-        "Branch": "Riverside,Riverside,Riverside,Riverside,Riverside,Riverside,Riverside,Riverside,Riverside,Riverside,Riverside"
+        "Branch": "Riverside,Riverside,Riverside,Riverside,Riverside,Riverside,Riverside,Riverside,Riverside,Riverside,Riverside",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5103,7 +5124,8 @@
         "PUMA": "4108,4108,4108,4108,4108,4111,4108,4111,4108,4108,4108,4108,4108,4111",
         "Shape__Area": 15403752.669555668,
         "Shape__Length": 64537.098857567966,
-        "Branch": "96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street"
+        "Branch": "96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street,96th Street",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5364,7 +5386,8 @@
         "PUMA": "4107,4107,4107,4107,4107,4107,4107,4107",
         "Shape__Area": 17372329.673263561,
         "Shape__Length": 54295.177163930552,
-        "Branch": "St. Agnes,St. Agnes,St. Agnes,St. Agnes,St. Agnes,St. Agnes,St. Agnes,St. Agnes"
+        "Branch": "St. Agnes,St. Agnes,St. Agnes,St. Agnes,St. Agnes,St. Agnes,St. Agnes,St. Agnes",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -5526,7 +5549,8 @@
         "PUMA": "4111,4111,4111,4111,4111,4111,4111,4111,4111,4111,4111,4111,4111",
         "Shape__Area": 46298892.582458451,
         "Shape__Length": 95044.054920560899,
-        "Branch": "Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar"
+        "Branch": "Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar,Aguilar",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6036,7 +6060,8 @@
         "PUMA": "4107,4107,4107,4107,4107,4107,4107,4107,4107",
         "Shape__Area": 18900491.360183712,
         "Shape__Length": 54769.338072083352,
-        "Branch": "Bloomingdale,Bloomingdale,Bloomingdale,Bloomingdale,Bloomingdale,Bloomingdale,Bloomingdale,Bloomingdale,Bloomingdale"
+        "Branch": "Bloomingdale,Bloomingdale,Bloomingdale,Bloomingdale,Bloomingdale,Bloomingdale,Bloomingdale,Bloomingdale,Bloomingdale",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6185,7 +6210,8 @@
         "PUMA": "4111,4111,4110,4111,4110",
         "Shape__Area": 8927769.3350219689,
         "Shape__Length": 29635.938535215129,
-        "Branch": "Harlem,Harlem,Harlem,Harlem,Harlem"
+        "Branch": "Harlem,Harlem,Harlem,Harlem,Harlem",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6295,7 +6321,8 @@
         "PUMA": "4110,4110,4110,4110,4110,4110,4110,4110,4110",
         "Shape__Area": 13050051.586853031,
         "Shape__Length": 44798.268269942513,
-        "Branch": "115th Street,115th Street,115th Street,115th Street,115th Street,115th Street,115th Street,115th Street,115th Street"
+        "Branch": "115th Street,115th Street,115th Street,115th Street,115th Street,115th Street,115th Street,115th Street,115th Street",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6441,7 +6468,8 @@
         "PUMA": "4107,4109,4109,4109,4109,4109,4109",
         "Shape__Area": 13276142.89930724,
         "Shape__Length": 43018.006635432524,
-        "Branch": "Morningside Heights,Morningside Heights,Morningside Heights,Morningside Heights,Morningside Heights,Morningside Heights,Morningside Heights"
+        "Branch": "Morningside Heights,Morningside Heights,Morningside Heights,Morningside Heights,Morningside Heights,Morningside Heights,Morningside Heights",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6646,7 +6674,8 @@
         "PUMA": "4111,4111,4111,4111",
         "Shape__Area": 9540268.1530151404,
         "Shape__Length": 28442.681326245998,
-        "Branch": "125th Street,125th Street,125th Street,125th Street"
+        "Branch": "125th Street,125th Street,125th Street,125th Street",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6947,7 +6976,8 @@
         "PUMA": "4109,4109,4109,4109,4109,4109",
         "Shape__Area": 12335060.974746706,
         "Shape__Length": 40226.5367061672,
-        "Branch": "George Bruce,George Bruce,George Bruce,George Bruce,George Bruce,George Bruce"
+        "Branch": "George Bruce,George Bruce,George Bruce,George Bruce,George Bruce,George Bruce",
+        "HVI": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -7104,7 +7134,8 @@
         "PUMA": "4110,4109,4110,4110,4110,4110,4111,4110,4110,4110,4110",
         "Shape__Area": 20226915.044769276,
         "Shape__Length": 67944.460981712153,
-        "Branch": "Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen"
+        "Branch": "Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen,Countee Cullen",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -7276,7 +7307,8 @@
         "PUMA": "4109,4109,4109,4109,4109,4109,4109",
         "Shape__Area": 15984383.13218688,
         "Shape__Length": 45529.548048719887,
-        "Branch": "Hamilton Grange,Hamilton Grange,Hamilton Grange,Hamilton Grange,Hamilton Grange,Hamilton Grange,Hamilton Grange"
+        "Branch": "Hamilton Grange,Hamilton Grange,Hamilton Grange,Hamilton Grange,Hamilton Grange,Hamilton Grange,Hamilton Grange",
+        "HVI": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -7503,7 +7535,8 @@
         "PUMA": "4110,4110,4110,4110",
         "Shape__Area": 5252395.6132659875,
         "Shape__Length": 23824.814506610841,
-        "Branch": "Macomb's Bridge,Macomb's Bridge,Macomb's Bridge,Macomb's Bridge"
+        "Branch": "Macomb's Bridge,Macomb's Bridge,Macomb's Bridge,Macomb's Bridge",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -7630,7 +7663,8 @@
         "PUMA": "4112,4112,4112,4112,4112,4110,4112,4112",
         "Shape__Area": 13382063.827087414,
         "Shape__Length": 45111.517877206265,
-        "Branch": "Washington Heights,Washington Heights,Washington Heights,Washington Heights,Washington Heights,Washington Heights,Washington Heights,Washington Heights"
+        "Branch": "Washington Heights,Washington Heights,Washington Heights,Washington Heights,Washington Heights,Washington Heights,Washington Heights,Washington Heights",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -8167,7 +8201,8 @@
         "PUMA": "4112,4112,4112,4112,4112,4112,4112,4112,4112,4112,4112,4112,4112,4112",
         "Shape__Area": 33785418.859802246,
         "Shape__Length": 115271.78930257002,
-        "Branch": "Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington"
+        "Branch": "Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington,Fort Washington",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -9072,7 +9107,8 @@
         "PUMA": "4112,4112,4112,4112,4112,4112,4112,4112,4112,4112,4112",
         "Shape__Area": 36382419.125061065,
         "Shape__Length": 99403.539487860864,
-        "Branch": "Inwood,Inwood,Inwood,Inwood,Inwood,Inwood,Inwood,Inwood,Inwood,Inwood,Inwood"
+        "Branch": "Inwood,Inwood,Inwood,Inwood,Inwood,Inwood,Inwood,Inwood,Inwood,Inwood,Inwood",
+        "HVI": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -11160,7 +11196,8 @@
         "PUMA": "4209,4209,4209,4209,4209,4209,4209,4209,4209",
         "Shape__Area": 38118043.183303833,
         "Shape__Length": 100889.11711091119,
-        "Branch": "Soundview,Soundview,Soundview,Soundview,Soundview,Soundview,Soundview,Soundview,Soundview"
+        "Branch": "Soundview,Soundview,Soundview,Soundview,Soundview,Soundview,Soundview,Soundview,Soundview",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -11855,7 +11892,8 @@
         "PUMA": "4221,4502",
         "Shape__Area": 1566351.1428833001,
         "Shape__Length": 11627.67954390201,
-        "Branch": "NONE,NONE"
+        "Branch": "NONE,NONE",
+        "HVI": 0
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12076,7 +12114,8 @@
         "PUMA": "4221,4221,4221,4221,4221,4221,4221,4221,4221,4221,4221,4221,4221,4221,4221,4221,4221,4221",
         "Shape__Area": 48910015.075576782,
         "Shape__Length": 145887.35927320007,
-        "Branch": "Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven"
+        "Branch": "Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven,Mott Haven",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12518,7 +12557,8 @@
         "PUMA": "4209,4209,4209,4209,4209,4209,4209,4209,4209,4209,4209",
         "Shape__Area": 24479246.22032167,
         "Shape__Length": 80207.79288840224,
-        "Branch": "Parkchester,Parkchester,Parkchester,Parkchester,Parkchester,Parkchester,Parkchester,Parkchester,Parkchester,Parkchester,Parkchester"
+        "Branch": "Parkchester,Parkchester,Parkchester,Parkchester,Parkchester,Parkchester,Parkchester,Parkchester,Parkchester,Parkchester,Parkchester",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -12901,7 +12941,8 @@
         "PUMA": "4209,4209,4209,4209,4209,4209,4209,4209,4209,4209,4209,4209,4209",
         "Shape__Area": 27213135.541854866,
         "Shape__Length": 80678.23293168885,
-        "Branch": "Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point"
+        "Branch": "Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point,Clason's Point",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -13148,7 +13189,8 @@
         "PUMA": "4204,4204,4204,4204,4204,4204,4204,4204,4204",
         "Shape__Area": 20816440.67344667,
         "Shape__Length": 63645.243553676184,
-        "Branch": "High Bridge,High Bridge,High Bridge,High Bridge,High Bridge,High Bridge,High Bridge,High Bridge,High Bridge"
+        "Branch": "High Bridge,High Bridge,High Bridge,High Bridge,High Bridge,High Bridge,High Bridge,High Bridge,High Bridge",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -13462,7 +13504,8 @@
         "PUMA": "4209,4209,4209,4209,4209",
         "Shape__Area": 22597680.438415557,
         "Shape__Length": 58974.771618229301,
-        "Branch": "Castle Hill,Castle Hill,Castle Hill,Castle Hill,Castle Hill"
+        "Branch": "Castle Hill,Castle Hill,Castle Hill,Castle Hill,Castle Hill",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -13898,7 +13941,8 @@
         "PUMA": "4221,4221,4221,4221,4263,4263,4221,4221,4263,4221,4221",
         "Shape__Area": 21726184.663986221,
         "Shape__Length": 72791.308623659585,
-        "Branch": "Woodstock,Woodstock,Woodstock,Woodstock,Woodstock,Woodstock,Woodstock,Woodstock,Woodstock,Woodstock,Woodstock"
+        "Branch": "Woodstock,Woodstock,Woodstock,Woodstock,Woodstock,Woodstock,Woodstock,Woodstock,Woodstock,Woodstock,Woodstock",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -14056,7 +14100,8 @@
         "PUMA": "4221,4221,4221,4221,4221,4221,4221,4221,4221,4221,4221,4221",
         "Shape__Area": 70158100.841125503,
         "Shape__Length": 125317.03180431837,
-        "Branch": "Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point"
+        "Branch": "Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point,Hunt's Point",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -15346,7 +15391,8 @@
         "PUMA": "4263,4263,4263,4263,4263,4263,4263,4263,4263,4263",
         "Shape__Area": 18668710.808486931,
         "Shape__Length": 64319.434468079009,
-        "Branch": "Morrisania,Morrisania,Morrisania,Morrisania,Morrisania,Morrisania,Morrisania,Morrisania,Morrisania,Morrisania"
+        "Branch": "Morrisania,Morrisania,Morrisania,Morrisania,Morrisania,Morrisania,Morrisania,Morrisania,Morrisania,Morrisania",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -15597,7 +15643,8 @@
         "PUMA": "4210,4210,4210,4210,4210,4210,4210,4210,4210,4210,4210,4210",
         "Shape__Area": 70135333.871429443,
         "Shape__Length": 170578.58323799135,
-        "Branch": "Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck"
+        "Branch": "Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck,Throg's Neck",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -17875,7 +17922,8 @@
         "PUMA": "4204,4204,4204,4204,4204,4204,4205,4204,4204,4204,4204,4204,4204,4204,4205,4205,4205,4205,4205",
         "Shape__Area": 21349228.545043945,
         "Shape__Length": 91242.291500188978,
-        "Branch": "Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse"
+        "Branch": "Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse,Grand Concourse",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -18367,7 +18415,8 @@
         "PUMA": "4204,4204,4204,4204,4204,4263,4221,4263,4204,4204,4204,4204,4204,4204",
         "Shape__Area": 28856622.560150158,
         "Shape__Length": 91868.206798009662,
-        "Branch": "Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose"
+        "Branch": "Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose,Melrose",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -18637,7 +18686,8 @@
         "PUMA": "4210,4210,4210,4210,4210,4210,4210,4210,4210",
         "Shape__Area": 60897067.506759629,
         "Shape__Length": 122239.93194540366,
-        "Branch": "Pelham Bay,Pelham Bay,Pelham Bay,Pelham Bay,Pelham Bay,Pelham Bay,Pelham Bay,Pelham Bay,Pelham Bay"
+        "Branch": "Pelham Bay,Pelham Bay,Pelham Bay,Pelham Bay,Pelham Bay,Pelham Bay,Pelham Bay,Pelham Bay,Pelham Bay",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -20081,7 +20131,8 @@
         "PUMA": "4210,4210,4210,4210,4210,4211",
         "Shape__Area": 27563441.847915642,
         "Shape__Length": 61565.223847875357,
-        "Branch": "Westchester Square,Westchester Square,Westchester Square,Westchester Square,Westchester Square,Westchester Square"
+        "Branch": "Westchester Square,Westchester Square,Westchester Square,Westchester Square,Westchester Square,Westchester Square",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -20556,7 +20607,8 @@
         "PUMA": "4205,4205,4205,4205,4205,4205",
         "Shape__Area": 8287862.6440277062,
         "Shape__Length": 31200.405111220076,
-        "Branch": "Sedgwick,Sedgwick,Sedgwick,Sedgwick,Sedgwick,Sedgwick"
+        "Branch": "Sedgwick,Sedgwick,Sedgwick,Sedgwick,Sedgwick,Sedgwick",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -20747,7 +20799,8 @@
         "PUMA": "4211,4211,4211,4211,4211,4211,4211,4211",
         "Shape__Area": 21031487.195495609,
         "Shape__Length": 62123.115700053597,
-        "Branch": "Pelham Parkway-Van Nest,Pelham Parkway-Van Nest,Pelham Parkway-Van Nest,Pelham Parkway-Van Nest,Pelham Parkway-Van Nest,Pelham Parkway-Van Nest,Pelham Parkway-Van Nest,Pelham Parkway-Van Nest"
+        "Branch": "Pelham Parkway-Van Nest,Pelham Parkway-Van Nest,Pelham Parkway-Van Nest,Pelham Parkway-Van Nest,Pelham Parkway-Van Nest,Pelham Parkway-Van Nest,Pelham Parkway-Van Nest,Pelham Parkway-Van Nest",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -20991,7 +21044,8 @@
         "PUMA": "4211,4211,4211,4211,4211,4211,4211,4211,4263,4211,4211,4211",
         "Shape__Area": 24850079.251892086,
         "Shape__Length": 84143.839763203316,
-        "Branch": "Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park"
+        "Branch": "Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park,Morris Park",
+        "HVI": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -21309,7 +21363,8 @@
         "PUMA": "4205,4205,4205,4207,4207,4207,4207,4207,4207,4207,4205,4263,4205,4207,4207,4205,4205,4263",
         "Shape__Area": 56973935.189620949,
         "Shape__Length": 120168.90010527521,
-        "Branch": "Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center"
+        "Branch": "Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center,Bronx Library Center",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -21817,7 +21872,8 @@
         "PUMA": "4205,4205,4205,4205,4205,4205,4205,4207,4205,4205,4207,4207",
         "Shape__Area": 18539465.110916149,
         "Shape__Length": 74613.425182976236,
-        "Branch": "Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin"
+        "Branch": "Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin,Francis Martin",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22309,7 +22365,8 @@
         "PUMA": "4207,4208,4208,4208,4207,4207,4207",
         "Shape__Area": 14761684.007080071,
         "Shape__Length": 51222.025026009338,
-        "Branch": "Jerome Park,Jerome Park,Jerome Park,Jerome Park,Jerome Park,Jerome Park,Jerome Park"
+        "Branch": "Jerome Park,Jerome Park,Jerome Park,Jerome Park,Jerome Park,Jerome Park,Jerome Park",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -22656,7 +22713,8 @@
         "PUMA": "4208,4208,4212,4208,4212,4208,4208",
         "Shape__Area": 91585159.356796294,
         "Shape__Length": 102392.98821021698,
-        "Branch": "Van Cortlandt,Van Cortlandt,Van Cortlandt,Van Cortlandt,Van Cortlandt,Van Cortlandt,Van Cortlandt"
+        "Branch": "Van Cortlandt,Van Cortlandt,Van Cortlandt,Van Cortlandt,Van Cortlandt,Van Cortlandt,Van Cortlandt",
+        "HVI": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23132,7 +23190,8 @@
         "PUMA": "4208,4208,4208,4208,4208",
         "Shape__Area": 11555408.26283263,
         "Shape__Length": 43231.6380761607,
-        "Branch": "Kingsbridge,Kingsbridge,Kingsbridge,Kingsbridge,Kingsbridge"
+        "Branch": "Kingsbridge,Kingsbridge,Kingsbridge,Kingsbridge,Kingsbridge",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23374,7 +23433,8 @@
         "PUMA": "4208,4208,4208,4208,4208",
         "Shape__Area": 15716831.8673706,
         "Shape__Length": 47970.257970148494,
-        "Branch": "Spuyten Duyvil,Spuyten Duyvil,Spuyten Duyvil,Spuyten Duyvil,Spuyten Duyvil"
+        "Branch": "Spuyten Duyvil,Spuyten Duyvil,Spuyten Duyvil,Spuyten Duyvil,Spuyten Duyvil",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -23837,7 +23897,8 @@
         "PUMA": "4210,4210,4210,4210,4210,4210,4210,4211,4212",
         "Shape__Area": 40282493.78877259,
         "Shape__Length": 88116.692058539542,
-        "Branch": "Baychester,Baychester,Baychester,Baychester,Baychester,Baychester,Baychester,Baychester,Baychester"
+        "Branch": "Baychester,Baychester,Baychester,Baychester,Baychester,Baychester,Baychester,Baychester,Baychester",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24058,7 +24119,8 @@
         "PUMA": "4208,4208,4208,4208,4208,4208,4208,4208",
         "Shape__Area": 44741213.357162461,
         "Shape__Length": 96644.574514454347,
-        "Branch": "Riverdale,Riverdale,Riverdale,Riverdale,Riverdale,Riverdale,Riverdale,Riverdale"
+        "Branch": "Riverdale,Riverdale,Riverdale,Riverdale,Riverdale,Riverdale,Riverdale,Riverdale",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24513,7 +24575,8 @@
         "PUMA": "4211,4211,4211,4211,4211,4211,4212,4212,4212,4212,4212,4211,4212,4212,4212",
         "Shape__Area": 40362808.915557869,
         "Shape__Length": 110003.5942693627,
-        "Branch": "Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester"
+        "Branch": "Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester,Eastchester",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24733,7 +24796,8 @@
         "PUMA": "4211,4211,4211,4211,4211,4211,4211,4212,4211,4212,4211,4211,4211,4212,4212,4212,4212",
         "Shape__Area": 28995365.535888679,
         "Shape__Length": 96895.410283435456,
-        "Branch": "Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton"
+        "Branch": "Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton,Allerton",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -24965,7 +25029,8 @@
         "PUMA": "4263,4263,4263,4263,4263,4263,4263,4263,4263,4263",
         "Shape__Area": 20397675.254867561,
         "Shape__Length": 61826.75991348867,
-        "Branch": "West Farms,West Farms,West Farms,West Farms,West Farms,West Farms,West Farms,West Farms,West Farms,West Farms"
+        "Branch": "West Farms,West Farms,West Farms,West Farms,West Farms,West Farms,West Farms,West Farms,West Farms,West Farms",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -25202,7 +25267,8 @@
         "PUMA": "4263,4263,4263,4263,4263,4263,4263,4205,4205,4263",
         "Shape__Area": 23721781.777725209,
         "Shape__Length": 72568.101047648684,
-        "Branch": "Tremont,Tremont,Tremont,Tremont,Tremont,Tremont,Tremont,Tremont,Tremont,Tremont"
+        "Branch": "Tremont,Tremont,Tremont,Tremont,Tremont,Tremont,Tremont,Tremont,Tremont,Tremont",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -25466,7 +25532,8 @@
         "PUMA": "4263,4263,4263,4263,4263,4263,4263",
         "Shape__Area": 12664494.755859388,
         "Shape__Length": 46231.943644672647,
-        "Branch": "Belmont,Belmont,Belmont,Belmont,Belmont,Belmont,Belmont"
+        "Branch": "Belmont,Belmont,Belmont,Belmont,Belmont,Belmont,Belmont",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -25594,7 +25661,8 @@
         "PUMA": "4212,4212,4212,4212,4212,4212,4212,4212,4212,4212,4212,4212",
         "Shape__Area": 28996671.957839966,
         "Shape__Length": 82400.181991330464,
-        "Branch": "Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield"
+        "Branch": "Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield,Wakefield",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -25870,7 +25938,8 @@
         "PUMA": "4212,4212,4212,4212,4212,4212,4212,4212,4212,4212,4212,4212,4212,4212,4212,4212",
         "Shape__Area": 56711917.837783791,
         "Shape__Length": 150020.84720971837,
-        "Branch": "Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald"
+        "Branch": "Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald,Edenwald",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26398,7 +26467,8 @@
         "PUMA": "4207,4207,4207,4207,4207,4207,4207,4207,4207,4207,4207",
         "Shape__Area": 20367731.83787537,
         "Shape__Length": 71712.635406034053,
-        "Branch": "Mosholu,Mosholu,Mosholu,Mosholu,Mosholu,Mosholu,Mosholu,Mosholu,Mosholu,Mosholu,Mosholu"
+        "Branch": "Mosholu,Mosholu,Mosholu,Mosholu,Mosholu,Mosholu,Mosholu,Mosholu,Mosholu,Mosholu,Mosholu",
+        "HVI": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26538,7 +26608,8 @@
         "PUMA": "4212,4212,4212,4212",
         "Shape__Area": 7550344.5277404692,
         "Shape__Length": 26649.888700717911,
-        "Branch": "Woodlawn Heights,Woodlawn Heights,Woodlawn Heights,Woodlawn Heights"
+        "Branch": "Woodlawn Heights,Woodlawn Heights,Woodlawn Heights,Woodlawn Heights",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -26674,7 +26745,8 @@
         "PUMA": "4210,4210,4210",
         "Shape__Area": 96662201.035629287,
         "Shape__Length": 180702.6859679585,
-        "Branch": "City Island,City Island,City Island"
+        "Branch": "City Island,City Island,City Island",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -30011,7 +30083,8 @@
         "PUMA": "4121,4103,4103,4103,4121,4103,4103",
         "Shape__Area": 18618798.834259026,
         "Shape__Length": 65373.567066481235,
-        "Branch": "Chatham Square,Chatham Square,Chatham Square,Chatham Square,Chatham Square,Chatham Square,Chatham Square"
+        "Branch": "Chatham Square,Chatham Square,Chatham Square,Chatham Square,Chatham Square,Chatham Square,Chatham Square",
+        "HVI": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -30624,7 +30697,8 @@
         "PUMA": "4501,4501,4501,4501,4501,4501,4501,4501",
         "Shape__Area": 34962519.319290169,
         "Shape__Length": 82514.349251905747,
-        "Branch": "St.  George,St.  George,St.  George,St.  George,St.  George,St.  George,St.  George,St.  George"
+        "Branch": "St.  George,St.  George,St.  George,St.  George,St.  George,St.  George,St.  George,St.  George",
+        "HVI": 3
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -31121,7 +31195,8 @@
         "PUMA": "4501,4501,4501,4501,4501,4501,4501,4501,4501,4501,4501,4501,4501",
         "Shape__Area": 75804979.417098999,
         "Shape__Length": 164652.73545304392,
-        "Branch": "Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton"
+        "Branch": "Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton,Stapleton",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -31959,7 +32034,8 @@
         "PUMA": "4501,4502,4502,4502,4502,4502",
         "Shape__Area": 60732851.288345367,
         "Shape__Length": 83195.509877472039,
-        "Branch": "South Beach,South Beach,South Beach,South Beach,South Beach,South Beach"
+        "Branch": "South Beach,South Beach,South Beach,South Beach,South Beach,South Beach",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -32572,7 +32648,8 @@
         "PUMA": "4502,4502,4502,4502,4502,4502,4502,4502",
         "Shape__Area": 90432482.084823623,
         "Shape__Length": 116911.27390069795,
-        "Branch": "Dongan Hills,Dongan Hills,Dongan Hills,Dongan Hills,Dongan Hills,Dongan Hills,Dongan Hills,Dongan Hills"
+        "Branch": "Dongan Hills,Dongan Hills,Dongan Hills,Dongan Hills,Dongan Hills,Dongan Hills,Dongan Hills,Dongan Hills",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -33073,7 +33150,8 @@
         "PUMA": "4501,4501,4501,4501,4501,4501,4501,4501,4501,4501",
         "Shape__Area": 68160434.375869691,
         "Shape__Length": 125025.57280155155,
-        "Branch": "West New Brighton,West New Brighton,West New Brighton,West New Brighton,West New Brighton,West New Brighton,West New Brighton,West New Brighton,West New Brighton,West New Brighton"
+        "Branch": "West New Brighton,West New Brighton,West New Brighton,West New Brighton,West New Brighton,West New Brighton,West New Brighton,West New Brighton,West New Brighton,West New Brighton",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -33752,7 +33830,8 @@
         "PUMA": "4502,4502,4502,4503,4503,4502,4502,4502",
         "Shape__Area": 79930909.07213597,
         "Shape__Length": 117408.81198697269,
-        "Branch": "New Dorp,New Dorp,New Dorp,New Dorp,New Dorp,New Dorp,New Dorp,New Dorp"
+        "Branch": "New Dorp,New Dorp,New Dorp,New Dorp,New Dorp,New Dorp,New Dorp,New Dorp",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -34247,7 +34326,8 @@
         "PUMA": "4503,4503,4503,4503,4503,4503,4503,4503,4503,4503,4503",
         "Shape__Area": 121081282.36347207,
         "Shape__Length": 204536.57529436037,
-        "Branch": "Great Kills,Great Kills,Great Kills,Great Kills,Great Kills,Great Kills,Great Kills,Great Kills,Great Kills,Great Kills,Great Kills"
+        "Branch": "Great Kills,Great Kills,Great Kills,Great Kills,Great Kills,Great Kills,Great Kills,Great Kills,Great Kills,Great Kills,Great Kills",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -36334,7 +36414,8 @@
         "PUMA": "4501,4501,4502,4501,4502,4502,4501,4502,4501,4501,4501,4502,4502,4502,4502,4501,4502",
         "Shape__Area": 181507821.29997244,
         "Shape__Length": 241175.74903631664,
-        "Branch": "Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh"
+        "Branch": "Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh,Todt Hill-Westerleigh",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -37173,7 +37254,8 @@
         "PUMA": "4503,4503,4503,4503,4503,4503,4503,4503,4503,4502,4503",
         "Shape__Area": 233355671.8924408,
         "Shape__Length": 214546.41446107361,
-        "Branch": "Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park"
+        "Branch": "Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park,Huguenot Park",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -38769,7 +38851,8 @@
         "PUMA": "4502,4502,4502,4502,4502,4502,4503,4503,4503,4503",
         "Shape__Area": 196932686.65562439,
         "Shape__Length": 178646.88153675463,
-        "Branch": "Richmondtown,Richmondtown,Richmondtown,Richmondtown,Richmondtown,Richmondtown,Richmondtown,Richmondtown,Richmondtown,Richmondtown"
+        "Branch": "Richmondtown,Richmondtown,Richmondtown,Richmondtown,Richmondtown,Richmondtown,Richmondtown,Richmondtown,Richmondtown,Richmondtown",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -39454,7 +39537,8 @@
         "PUMA": "4501,4501,4501,4501,4501",
         "Shape__Area": 26923320.187438969,
         "Shape__Length": 62262.950215136851,
-        "Branch": "Port Richmond,Port Richmond,Port Richmond,Port Richmond,Port Richmond"
+        "Branch": "Port Richmond,Port Richmond,Port Richmond,Port Richmond,Port Richmond",
+        "HVI": 4
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -39903,7 +39987,8 @@
         "PUMA": "4503,4503,4503,4503",
         "Shape__Area": 114249716.4662171,
         "Shape__Length": 109841.32724005621,
-        "Branch": "Charleston,Charleston,Charleston,Charleston"
+        "Branch": "Charleston,Charleston,Charleston,Charleston",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -41355,7 +41440,8 @@
         "PUMA": "4501,4501,4501,4501,4501,4501,4501,4501,4502",
         "Shape__Area": 195659407.99185133,
         "Shape__Length": 199675.16833957215,
-        "Branch": "Mariner's Harbor,Mariner's Harbor,Mariner's Harbor,Mariner's Harbor,Mariner's Harbor,Mariner's Harbor,Mariner's Harbor,Mariner's Harbor,Mariner's Harbor"
+        "Branch": "Mariner's Harbor,Mariner's Harbor,Mariner's Harbor,Mariner's Harbor,Mariner's Harbor,Mariner's Harbor,Mariner's Harbor,Mariner's Harbor,Mariner's Harbor",
+        "HVI": 2
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -44384,7 +44470,8 @@
         "PUMA": "4503,4503,4503,4503,4503",
         "Shape__Area": 143252930.65801239,
         "Shape__Length": 142475.64523922958,
-        "Branch": "Tottenville,Tottenville,Tottenville,Tottenville,Tottenville"
+        "Branch": "Tottenville,Tottenville,Tottenville,Tottenville,Tottenville",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -45938,7 +46025,8 @@
         "PUMA": "4108,4108,4108",
         "Shape__Area": 6312945.3919372596,
         "Shape__Length": 26250.615109837119,
-        "Branch": "Roosevelt Island,Roosevelt Island,Roosevelt Island"
+        "Branch": "Roosevelt Island,Roosevelt Island,Roosevelt Island",
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
