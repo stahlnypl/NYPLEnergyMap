@@ -184,6 +184,7 @@
 
 				var HVI_Data = L.geoJSON(tractJsonData, {
 					style: function (feature) {
+						console.log(feature.properties.Branch,feature.properties.HVI)
 						switch (feature.properties.HVI) {
 							case 1:
 								return { color: '#e9c213' };
@@ -638,8 +639,9 @@
 								}
 							]
 						},
+						
 						{
-							label: 'Projects',
+							label: 'Data Layers',
 							selectAllCheckbox: false,
 							collapsed: false,
 							children: [
@@ -648,7 +650,14 @@
 									selectAllCheckbox: false,
 									collapsed: true,
 									children: [{ label: 'Heat Vulnerability Index', layer: HVI_Data }]
-								},
+								}
+							]
+						},
+						{
+							label: 'Projects',
+							selectAllCheckbox: false,
+							collapsed: false,
+							children: [
 								{ label: 'Clear Selection', layer: noSites, radioGroup: 'radio' },
 								{ label: 'LED', layer: LED_check, radioGroup: 'radio' },
 								{ label: 'BMS', layer: BMS_Check, radioGroup: 'radio' },
