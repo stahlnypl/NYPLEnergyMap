@@ -140,6 +140,8 @@
 			var electric_Check = L.featureGroup();
 			var Solar_Check = L.featureGroup();
 			var noSites = L.featureGroup();
+			var EJ_0 = L.featureGroup();
+			var EJ_1 = L.featureGroup();
 
 			// Asyncronous Function to Call Supabase Library Data
 			async function fetchData() {
@@ -182,6 +184,23 @@
 			if (tractJsonData) {
 				console.log(tractJsonData);
 
+				var EJ_Data = L.geoJSON(tractJsonData, {
+					style: function (feature) {
+						switch (feature.properties.EJ) {
+							case 1:
+								return { color: '#C7FFAD' };
+							case 5:
+								return { color: '#064b00' };
+						}
+					},
+					weight: .5,
+					fillOpacity: .75
+				});
+			}
+
+			if (tractJsonData) {
+				console.log(tractJsonData);
+
 				var HVI_Data = L.geoJSON(tractJsonData, {
 					style: function (feature) {
 						switch (feature.properties.HVI) {
@@ -197,10 +216,18 @@
 								return { color: '#7f3835' };
 						}
 					},
-					weight: 0,
+					weight: 1,
 					fillOpacity: .75
 				});
 			}
+
+			// if (e.properties.EJ === 1) {
+            //         L.geoJSON(c, EJStyle).addTo(EJ_1);
+            //     } else if (c.properties.EJ === 0) {
+            //         L.geoJSON(c, EJStyle).addTo(EJ_0);
+            //         }
+
+                
 
 			// Asyncronous Function to create Markers for Data
 			async function addMarkersToMap(map, libs) {
@@ -648,6 +675,12 @@
 									selectAllCheckbox: false,
 									collapsed: true,
 									children: [{ label: 'Heat Vulnerability Index', layer: HVI_Data }]
+								},
+								{
+									label: 'EJ Scale',
+									selectAllCheckbox: false,
+									collapsed: true,
+									children: [{ label: 'Environmental Justice Scale', layer: EJ_Data }]
 								},
 								{ label: 'Clear Selection', layer: noSites, radioGroup: 'radio' },
 								{ label: 'LED', layer: LED_check, radioGroup: 'radio' },

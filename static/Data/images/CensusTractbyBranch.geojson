@@ -132,7 +132,8 @@
         "Shape__Area": 11280929.675689692,
         "Shape__Length": 39222.177761093684,
         "Branch": "Seward Park,Seward Park,Seward Park,Seward Park,Seward Park,Seward Park,Seward Park",
-        "HVI_Value": 3
+        "HVI_Value": 3,
+        "EJ": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -331,7 +332,8 @@
         "Shape__Area": 15824554.038940426,
         "Shape__Length": 52140.098010486239,
         "Branch": "Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street,Mulberry Street",
-        "HVI": 1
+        "HVI": 1,
+        "EJ": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -738,7 +740,8 @@
         "Shape__Area": 9006080.6108093299,
         "Shape__Length": 31477.808106097171,
         "Branch": "Thompkins Square,Thompkins Square,Thompkins Square,Thompkins Square,Thompkins Square",
-        "HVI": 2
+        "HVI": 2,
+        "EJ": 5
       },
       "geometry": {
         "type": "MultiPolygon",
