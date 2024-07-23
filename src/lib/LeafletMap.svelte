@@ -145,6 +145,8 @@
 			var HVI_3 = L.featureGroup();
 			var HVI_4 = L.featureGroup();
 			var HVI_5 = L.featureGroup();
+			var EJ_1 = L.featureGroup();
+			var EJ_5 = L.featureGroup();
 
 			// Asyncronous Function to Call Supabase Library Data
 			async function fetchData() {
@@ -184,24 +186,65 @@
 
 			const tractJsonData = await loadTractData();
 
-			if (tractJsonData) {
-				console.log(tractJsonData);
+			// if (tractJsonData) {
 
-				var EJ_Data = L.geoJSON(tractJsonData, {
-					style: function (feature) {
-						switch (feature.properties.EJ) {
-							case 1:
-								return { color: '#C7FFAD' };
-							case 5:
-								return { color: '#064b00' };
-						}
-					},
-					weight: .5,
-					fillOpacity: .75
-				});
-			}
+			// 	var EJstyle = L.geoJSON(tractJsonData, {
+			// 		style: function (feature) {
+			// 			switch (feature.properties.EJ) {
+			// 				case 1:
+			// 					return { color: '#C7FFAD' };
+			// 				case 5:
+			// 					return { color: '#064b00' };
+			// 			}
+			// 		},
+			// 		weight: .5,
+			// 		fillOpacity: .75
+			// 	});
+
+			// 	tractJsonData.features.forEach((c) => {
+			// 		var EJ_vals = c.properties.EJ;
+
+			// 		if (EJ_vals === 1) {
+			// 			L.geoJSON(c, EJstyle).addTo(EJ_1);
+			// 		}
+			// 		if (EJ_vals === 5) {
+			// 			L.geoJSON(c, EJstyle).addTo(EJ_5);
+			// 		}
+
+			// 	})
+
+			// 	var EJ_Data = L.geoJSON(tractJsonData, EJstyle);
+			// }
 
 			if (tractJsonData) {
+
+				// var EJstyle = L.geoJSON(tractJsonData, {
+				// 	style: function (feature) {
+				// 		switch (feature.properties.EJ) {
+				// 			case 1:
+				// 				return { color: '#C7FFAD' };
+				// 			case 5:
+				// 				return { color: '#064b00' };
+				// 		}
+				// 	},
+				// 	weight: .5,
+				// 	fillOpacity: .75
+				// });
+
+				// tractJsonData.features.forEach((c) => {
+				// 	var EJ_vals = c.properties.EJ;
+
+				// 	if (EJ_vals === 1) {
+				// 		L.geoJSON(c, EJstyle).addTo(EJ_1);
+				// 	}
+				// 	if (EJ_vals === 5) {
+				// 		L.geoJSON(c, EJstyle).addTo(EJ_5);
+				// 	}
+
+				// })
+
+				// var EJ_Data = L.geoJSON(tractJsonData, EJstyle);
+
 
 				var HVIstyle = {
 						style: function (feature) {
@@ -705,6 +748,12 @@
 									selectAllCheckbox: false,
 									collapsed: true,
 									children: [{ label: 'Heat Vulnerability Index', layer: HVI_Data }]
+								},
+								{
+									label: 'EJ',
+									selectAllCheckbox: false,
+									collapsed: true,
+									children: [{ label: 'Environmenal Justtice Scale', layer: EJ_Data }]
 								},
 								{ label: 'Clear Selection', layer: noSites, radioGroup: 'radio' },
 								{ label: 'LED', layer: LED_check, radioGroup: 'radio' },

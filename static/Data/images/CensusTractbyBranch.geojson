@@ -132,12 +132,8 @@
         "Shape__Area": 11280929.675689692,
         "Shape__Length": 39222.177761093684,
         "Branch": "Seward Park,Seward Park,Seward Park,Seward Park,Seward Park,Seward Park,Seward Park",
-<<<<<<< HEAD
         "HVI_Value": 3,
         "EJ": 1
-=======
-        "HVI": 3
->>>>>>> 9cd93d7b783e0dff8c57fc7611215c2cb5ab2364
       },
       "geometry": {
         "type": "MultiPolygon",
