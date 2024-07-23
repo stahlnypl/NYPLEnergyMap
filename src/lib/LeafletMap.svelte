@@ -140,8 +140,11 @@
 			var electric_Check = L.featureGroup();
 			var Solar_Check = L.featureGroup();
 			var noSites = L.featureGroup();
-			var EJ_0 = L.featureGroup();
-			var EJ_1 = L.featureGroup();
+			var HVI_1 = L.featureGroup();
+			var HVI_2 = L.featureGroup();
+			var HVI_3 = L.featureGroup();
+			var HVI_4 = L.featureGroup();
+			var HVI_5 = L.featureGroup();
 
 			// Asyncronous Function to Call Supabase Library Data
 			async function fetchData() {
@@ -199,10 +202,9 @@
 			}
 
 			if (tractJsonData) {
-				console.log(tractJsonData);
 
-				var HVI_Data = L.geoJSON(tractJsonData, {
-					style: function (feature) {
+				var HVIstyle = {
+						style: function (feature) {
 						switch (feature.properties.HVI) {
 							case 1:
 								return { color: '#e9c213' };
@@ -218,7 +220,34 @@
 					},
 					weight: 1,
 					fillOpacity: .75
-				});
+					}
+
+				tractJsonData.features.forEach((c) => {
+					var HVI_vals = c.properties.HVI;
+
+					
+
+					if (HVI_vals === 1) {
+						L.geoJSON(c, HVIstyle).addTo(HVI_1);
+					}
+					if (HVI_vals === 2) {
+						L.geoJSON(c, HVIstyle).addTo(HVI_2);
+					}
+					if (HVI_vals === 3) {
+						L.geoJSON(c, HVIstyle).addTo(HVI_3);
+					}
+					if (HVI_vals === 4) {
+						L.geoJSON(c, HVIstyle).addTo(HVI_4);
+					}
+					if (HVI_vals === 5) {
+						L.geoJSON(c, HVIstyle).addTo(HVI_5);
+					}
+
+				})
+
+				var HVI_Data = L.geoJSON(tractJsonData, HVIstyle);
+
+
 			}
 
 			// if (e.properties.EJ === 1) {
@@ -665,8 +694,9 @@
 								}
 							]
 						},
+						
 						{
-							label: 'Projects',
+							label: 'Data Layers',
 							selectAllCheckbox: false,
 							collapsed: false,
 							children: [
@@ -675,12 +705,6 @@
 									selectAllCheckbox: false,
 									collapsed: true,
 									children: [{ label: 'Heat Vulnerability Index', layer: HVI_Data }]
-								},
-								{
-									label: 'EJ Scale',
-									selectAllCheckbox: false,
-									collapsed: true,
-									children: [{ label: 'Environmental Justice Scale', layer: EJ_Data }]
 								},
 								{ label: 'Clear Selection', layer: noSites, radioGroup: 'radio' },
 								{ label: 'LED', layer: LED_check, radioGroup: 'radio' },
@@ -852,7 +876,7 @@
 
 	<div class="sidebar">
 		Longitude: {lng.toFixed(4)} | Latitude: {lat.toFixed(4)} | Zoom: {zoom.toFixed(2)}
-		<br />v: 1.2.1
+		<br />v: 1.3.2
 		<br />Last Updated: 6/27/2024
 	</div>
 </section>

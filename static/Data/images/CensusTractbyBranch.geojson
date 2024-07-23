@@ -25,7 +25,7 @@
         "Shape__Area": 1842974.2476043699,
         "Shape__Length": 10832.877284304999,
         "Branch": "Battery Park City",
-        "HVI_Value": 1
+        "HVI": 1
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -132,8 +132,12 @@
         "Shape__Area": 11280929.675689692,
         "Shape__Length": 39222.177761093684,
         "Branch": "Seward Park,Seward Park,Seward Park,Seward Park,Seward Park,Seward Park,Seward Park",
+<<<<<<< HEAD
         "HVI_Value": 3,
         "EJ": 1
+=======
+        "HVI": 3
+>>>>>>> 9cd93d7b783e0dff8c57fc7611215c2cb5ab2364
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -11895,8 +11899,8 @@
         "PUMA": "4221,4502",
         "Shape__Area": 1566351.1428833001,
         "Shape__Length": 11627.67954390201,
-        "Branch": "NONE,NONE",
-        "HVI": 0
+        "Branch": "Mott Haven",
+        "HVI": 5
       },
       "geometry": {
         "type": "MultiPolygon",
