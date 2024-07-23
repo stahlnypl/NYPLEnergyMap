@@ -186,36 +186,6 @@
 
 			const tractJsonData = await loadTractData();
 
-			// if (tractJsonData) {
-
-			// 	var EJstyle = L.geoJSON(tractJsonData, {
-			// 		style: function (feature) {
-			// 			switch (feature.properties.EJ) {
-			// 				case 1:
-			// 					return { color: '#C7FFAD' };
-			// 				case 5:
-			// 					return { color: '#064b00' };
-			// 			}
-			// 		},
-			// 		weight: .5,
-			// 		fillOpacity: .75
-			// 	});
-
-			// 	tractJsonData.features.forEach((c) => {
-			// 		var EJ_vals = c.properties.EJ;
-
-			// 		if (EJ_vals === 1) {
-			// 			L.geoJSON(c, EJstyle).addTo(EJ_1);
-			// 		}
-			// 		if (EJ_vals === 5) {
-			// 			L.geoJSON(c, EJstyle).addTo(EJ_5);
-			// 		}
-
-			// 	})
-
-			// 	var EJ_Data = L.geoJSON(tractJsonData, EJstyle);
-			// }
-
 			if (tractJsonData) {
 
 				var EJstyle = L.geoJSON(tractJsonData, {
@@ -294,8 +264,6 @@
 
 
 			}
-
-
                 
 
 			// Asyncronous Function to create Markers for Data
@@ -744,13 +712,24 @@
 									label: 'HVI',
 									selectAllCheckbox: false,
 									collapsed: true,
-									children: [{ label: 'Heat Vulnerability Index', layer: HVI_Data }]
+									children: [ 
+										{label: 'Heat Vulnerability Index', layer: HVI_Data },
+										{label: 'HVI 1', layer: HVI_1 },
+										{label: 'HVI 2', layer: HVI_2 },
+										{label: 'HVI 3', layer: HVI_3 },
+										{label: 'HVI 4', layer: HVI_4 },
+										{label: 'HVI 5', layer: HVI_5 },
+									]
 								},
 								{
 									label: 'EJ',
 									selectAllCheckbox: false,
 									collapsed: true,
-									children: [{ label: 'Environmenal Justtice Scale', layer: EJ_Data }]
+									children: [
+										{ label: 'Environmental Justice Scale', layer: EJ_Data },
+										{ label: 'EJ 1', layer: EJ_1 },
+										{ label: 'EJ 5', layer: EJ_5 }
+									]
 								},
 								{ label: 'Clear Selection', layer: noSites, radioGroup: 'radio' },
 								{ label: 'LED', layer: LED_check, radioGroup: 'radio' },
