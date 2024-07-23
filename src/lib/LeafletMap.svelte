@@ -188,33 +188,6 @@
 
 			if (tractJsonData) {
 
-				var EJstyle = L.geoJSON(tractJsonData, {
-					style: function (feature) {
-						switch (feature.properties.EJ) {
-							case 1:
-								return { color: '#C7FFAD' };
-							case 5:
-								return { color: '#064b00' };
-						}
-					},
-					weight: .5,
-					fillOpacity: .75
-				});
-
-				tractJsonData.features.forEach((c) => {
-					var EJ_vals = c.properties.EJ;
-
-					if (EJ_vals === 1) {
-						L.geoJSON(c, EJstyle).addTo(EJ_1);
-					}
-					if (EJ_vals === 5) {
-						L.geoJSON(c, EJstyle).addTo(EJ_5);
-					}
-
-				})
-
-				var EJ_Data = L.geoJSON(tractJsonData, EJstyle);
-
 
 				var HVIstyle = {
 						style: function (feature) {
@@ -234,6 +207,8 @@
 					weight: 1,
 					fillOpacity: .75
 				}
+
+				console.log('HVI Style: ', HVIstyle)
 
 
 				tractJsonData.features.forEach((c) => {
@@ -261,6 +236,36 @@
 				})
 
 				var HVI_Data = L.geoJSON(tractJsonData, HVIstyle);
+
+				var EJstyle = {
+						style: function (feature) {
+						switch (feature.properties.EJ) {
+							case 1:
+								return { color: '#C7FFAD' };
+							case 5:
+								return { color: '#064b00' };
+						}
+					},
+					weight: .5,
+					fillOpacity: .75
+				};
+
+				console.log('EJ style: ', EJstyle)
+
+				tractJsonData.features.forEach((c) => {
+					var EJ_vals = c.properties.EJ;
+
+
+					if (EJ_vals === 1) {
+						L.geoJSON(c, EJstyle).addTo(EJ_1);
+					}
+					if (EJ_vals === 5) {
+						L.geoJSON(c, EJstyle).addTo(EJ_5);
+					}
+
+				})
+
+				var EJ_Data = L.geoJSON(tractJsonData, EJstyle);
 
 
 			}
