@@ -25,7 +25,8 @@
         "Shape__Area": 1842974.2476043699,
         "Shape__Length": 10832.877284304999,
         "Branch": "Battery Park City",
-        "HVI": 1
+        "HVI": 1,
+        "EJ": 1
       },
       "geometry": {
         "type": "MultiPolygon",

@@ -218,32 +218,32 @@
 
 			if (tractJsonData) {
 
-				// var EJstyle = L.geoJSON(tractJsonData, {
-				// 	style: function (feature) {
-				// 		switch (feature.properties.EJ) {
-				// 			case 1:
-				// 				return { color: '#C7FFAD' };
-				// 			case 5:
-				// 				return { color: '#064b00' };
-				// 		}
-				// 	},
-				// 	weight: .5,
-				// 	fillOpacity: .75
-				// });
+				var EJstyle = L.geoJSON(tractJsonData, {
+					style: function (feature) {
+						switch (feature.properties.EJ) {
+							case 1:
+								return { color: '#C7FFAD' };
+							case 5:
+								return { color: '#064b00' };
+						}
+					},
+					weight: .5,
+					fillOpacity: .75
+				});
 
-				// tractJsonData.features.forEach((c) => {
-				// 	var EJ_vals = c.properties.EJ;
+				tractJsonData.features.forEach((c) => {
+					var EJ_vals = c.properties.EJ;
 
-				// 	if (EJ_vals === 1) {
-				// 		L.geoJSON(c, EJstyle).addTo(EJ_1);
-				// 	}
-				// 	if (EJ_vals === 5) {
-				// 		L.geoJSON(c, EJstyle).addTo(EJ_5);
-				// 	}
+					if (EJ_vals === 1) {
+						L.geoJSON(c, EJstyle).addTo(EJ_1);
+					}
+					if (EJ_vals === 5) {
+						L.geoJSON(c, EJstyle).addTo(EJ_5);
+					}
 
-				// })
+				})
 
-				// var EJ_Data = L.geoJSON(tractJsonData, EJstyle);
+				var EJ_Data = L.geoJSON(tractJsonData, EJstyle);
 
 
 				var HVIstyle = {
@@ -263,19 +263,8 @@
 					},
 					weight: 1,
 					fillOpacity: .75
+				}
 
-					var EJStyle = {
-						style: function (feature) {
-							switch (feature.properties.EJ) {
-								case 0:
-									return { color: '#004d00'};
-								case 1: 
-									return { color: '#b3b3b3'};
-							}
-						}
-						}
-					}
-					}
 
 				tractJsonData.features.forEach((c) => {
 					var HVI_vals = c.properties.HVI;
@@ -298,11 +287,6 @@
 						L.geoJSON(c, HVIstyle).addTo(HVI_5);
 					}
 					
-				if (c.properties.EJ === 1) {
-					L.geoJSON(c, EJStyle).addTo(EJ_1);
-				} else if (c.properties.EJ === 0) {
-					L.geoJSON(c, EJStyle).addTo(EJ_0);
-					}
 
 				})
 
@@ -311,11 +295,6 @@
 
 			}
 
-			// if (e.properties.EJ === 1) {
-            //         L.geoJSON(c, EJStyle).addTo(EJ_1);
-            //     } else if (c.properties.EJ === 0) {
-            //         L.geoJSON(c, EJStyle).addTo(EJ_0);
-            //         }
 
                 
 
