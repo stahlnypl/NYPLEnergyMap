@@ -145,6 +145,8 @@
 			var HVI_3 = L.featureGroup();
 			var HVI_4 = L.featureGroup();
 			var HVI_5 = L.featureGroup();
+			var EJ_0 = L.featureGroup();
+			var EJ_1 = L.featureGroup();
 
 			// Asyncronous Function to Call Supabase Library Data
 			async function fetchData() {
@@ -220,6 +222,18 @@
 					},
 					weight: 1,
 					fillOpacity: .75
+
+					var EJStyle = {
+						style: function (feature) {
+							switch (feature.properties.EJ) {
+								case 0:
+									return { color: '#004d00'};
+								case 1: 
+									return { color: '#b3b3b3'};
+							}
+						}
+						}
+					}
 					}
 
 				tractJsonData.features.forEach((c) => {
@@ -241,6 +255,12 @@
 					}
 					if (HVI_vals === 5) {
 						L.geoJSON(c, HVIstyle).addTo(HVI_5);
+					}
+					
+				if (c.properties.EJ === 1) {
+					L.geoJSON(c, EJStyle).addTo(EJ_1);
+				} else if (c.properties.EJ === 0) {
+					L.geoJSON(c, EJStyle).addTo(EJ_0);
 					}
 
 				})
