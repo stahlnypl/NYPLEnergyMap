@@ -125,7 +125,7 @@
 				}
 			});
 
-			// Setting Variables for Layer Control Tree
+			// Step 1: Setting Variables for Layer Control Tree
 			var wbronx = L.featureGroup();
 			var cbronx = L.featureGroup();
 			var ebronx = L.featureGroup();
@@ -187,6 +187,8 @@
 			const tractJsonData = await loadTractData();
 
 			if (tractJsonData) {
+
+				// Step 2: Creating Styles for new values and sorting features into groups (i.e. water into our buckets)
 
 
 				var HVIstyle = {
