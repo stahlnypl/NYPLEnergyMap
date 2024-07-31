@@ -125,7 +125,6 @@
 				}
 			});
 
-			// Step 1: Setting Variables for Layer Control Tree
 			var wbronx = L.featureGroup();
 			var cbronx = L.featureGroup();
 			var ebronx = L.featureGroup();
@@ -147,6 +146,13 @@
 			var HVI_5 = L.featureGroup();
 			var EJ_1 = L.featureGroup();
 			var EJ_5 = L.featureGroup();
+			/////////////////////////////////////////////////////////////
+			// Step 1 (START): Setting Variables for Layer Control Tree//
+			/////////////////////////////////////////////////////////////
+			var VariableName_1 = L.featureGroup();
+			//////////////////
+			// Step 1 (STOP)//
+			//////////////////
 
 			// Asyncronous Function to Call Supabase Library Data
 			async function fetchData() {
@@ -187,12 +193,8 @@
 			const tractJsonData = await loadTractData();
 
 			if (tractJsonData) {
-
-				// Step 2: Creating Styles for new values and sorting features into groups (i.e. water into our buckets)
-
-
 				var HVIstyle = {
-						style: function (feature) {
+					style: function (feature) {
 						switch (feature.properties.HVI) {
 							case 1:
 								return { color: '#e9c213' };
@@ -207,16 +209,13 @@
 						}
 					},
 					weight: 1,
-					fillOpacity: .75
-				}
+					fillOpacity: 0.75
+				};
 
-				console.log('HVI Style: ', HVIstyle)
-
+				console.log('HVI Style: ', HVIstyle);
 
 				tractJsonData.features.forEach((c) => {
 					var HVI_vals = c.properties.HVI;
-
-					
 
 					if (HVI_vals === 1) {
 						L.geoJSON(c, HVIstyle).addTo(HVI_1);
@@ -233,14 +232,12 @@
 					if (HVI_vals === 5) {
 						L.geoJSON(c, HVIstyle).addTo(HVI_5);
 					}
-					
-
-				})
+				});
 
 				var HVI_Data = L.geoJSON(tractJsonData, HVIstyle);
 
 				var EJstyle = {
-						style: function (feature) {
+					style: function (feature) {
 						switch (feature.properties.EJ) {
 							case 1:
 								return { color: '#C7FFAD' };
@@ -248,15 +245,14 @@
 								return { color: '#064b00' };
 						}
 					},
-					weight: .5,
-					fillOpacity: .75
+					weight: 0.5,
+					fillOpacity: 0.75
 				};
 
-				console.log('EJ style: ', EJstyle)
+				console.log('EJ style: ', EJstyle);
 
 				tractJsonData.features.forEach((c) => {
 					var EJ_vals = c.properties.EJ;
-
 
 					if (EJ_vals === 1) {
 						L.geoJSON(c, EJstyle).addTo(EJ_1);
@@ -264,14 +260,39 @@
 					if (EJ_vals === 5) {
 						L.geoJSON(c, EJstyle).addTo(EJ_5);
 					}
-
-				})
+				});
 
 				var EJ_Data = L.geoJSON(tractJsonData, EJstyle);
 
+				/////////////////////////////////////////////////////////////////////////////////////
+				// Step 2 (START): Creating Styles for new values and sorting features into groups //
+				/////////////////////////////////////////////////////////////////////////////////////
 
+				var newVariablestyle = {
+					style: function (feature) {
+						switch (feature.properties.Value_name_from_JSON_file) {
+							case 1:
+								return { color: '#color1' };
+						}
+					},
+					weight: 1,
+					fillOpacity: 0.75
+				};
+
+				tractJsonData.features.forEach((c) => {
+					var newVariable_vals = c.properties.Value_name_from_JSON_file;
+
+					if (newVariable_vals === 1) {
+						L.geoJSON(c, newVariablestyle).addTo(NewVariable_1);
+					}
+				});
+
+				var newValue_Data = L.geoJSON(tractJsonData, newVariablestyle);
+
+				///////////////////
+				// Step 2 (STOP)//
+				//////////////////
 			}
-                
 
 			// Asyncronous Function to create Markers for Data
 			async function addMarkersToMap(map, libs) {
@@ -709,7 +730,7 @@
 								}
 							]
 						},
-						
+
 						{
 							label: 'Data Layers',
 							selectAllCheckbox: false,
@@ -719,13 +740,13 @@
 									label: 'HVI',
 									selectAllCheckbox: false,
 									collapsed: true,
-									children: [ 
-										{label: 'Heat Vulnerability Index', layer: HVI_Data },
-										{label: 'HVI 1', layer: HVI_1 },
-										{label: 'HVI 2', layer: HVI_2 },
-										{label: 'HVI 3', layer: HVI_3 },
-										{label: 'HVI 4', layer: HVI_4 },
-										{label: 'HVI 5', layer: HVI_5 },
+									children: [
+										{ label: 'Heat Vulnerability Index', layer: HVI_Data },
+										{ label: 'HVI 1', layer: HVI_1 },
+										{ label: 'HVI 2', layer: HVI_2 },
+										{ label: 'HVI 3', layer: HVI_3 },
+										{ label: 'HVI 4', layer: HVI_4 },
+										{ label: 'HVI 5', layer: HVI_5 }
 									]
 								},
 								{
@@ -738,16 +759,34 @@
 										{ label: 'EJ 5', layer: EJ_5 }
 									]
 								},
+								///////////////////////////////////////////////////
+								//Step 3 (Start): Adding layers to the Layer Tree//
+								///////////////////////////////////////////////////
+								{
+									label: 'Variable Name',
+									selectAllCheckbox: false,
+									collapsed: true,
+									children: [
+										{
+											label: 'Long Version of Name',
+											layer: newValue_Data
+										},
+										{
+											label: 'Long Version of Variable Name',
+											layer: VariableName_1
+										}
+									]
+								},
+
+								//////////////////
+								//Step 3 (STOP)//
+								/////////////////
+
 								{ label: 'Clear Selection', layer: noSites, radioGroup: 'radio' },
 								{ label: 'LED', layer: LED_check, radioGroup: 'radio' },
 								{ label: 'BMS', layer: BMS_Check, radioGroup: 'radio' },
 								{ label: 'Electrification', layer: electric_Check, radioGroup: 'radio' },
 								{ label: 'Solar', layer: Solar_Check, radioGroup: 'radio' }
-
-								// { label: 'AEDs', layer: aedCheck },
-								// { label: 'EHS Inspection', layer: ehsCheck },
-								// { label: 'Roof Inventory', layer: roofCheck },
-								// { label: 'MEWP Inventory', layer: mewpCheck }
 							]
 						}
 					]
