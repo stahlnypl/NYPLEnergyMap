@@ -775,18 +775,27 @@
 								//Step 3 (Start): Adding layers to the Layer Tree//
 								///////////////////////////////////////////////////
 								{
-									label: 'Variable Name',
+									label: 'FZ',
 									selectAllCheckbox: false,
 									collapsed: true,
 									children: [
 										{
-											label: 'Long Version of Name',
-											layer: newValue_Data
+											label: 'Flood Zone Scale',
+											layer: FZ_Data
 										},
 										{
-											label: 'Long Version of Variable Name',
-											layer: VariableName_1
-										}
+											label: 'FZ 0',
+											layer: FZ_0
+										},
+										{
+											label: 'FZ 1',
+											layer: FZ_1
+										},
+										{
+											label: 'FZ 2',
+											layer: FZ_2
+										},
+
 									]
 								},
 
