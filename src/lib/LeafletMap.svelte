@@ -149,7 +149,9 @@
 			/////////////////////////////////////////////////////////////
 			// Step 1 (START): Setting Variables for Layer Control Tree//
 			/////////////////////////////////////////////////////////////
-			var VariableName_1 = L.featureGroup();
+			var FZ_0 = L.featureGroup();
+			var FZ_1 = L.featureGroup();
+			var FZ_2 = L.featureGroup();
 			//////////////////
 			// Step 1 (STOP)//
 			//////////////////
@@ -268,11 +270,15 @@
 				// Step 2 (START): Creating Styles for new values and sorting features into groups //
 				/////////////////////////////////////////////////////////////////////////////////////
 
-				var newVariablestyle = {
+				var FZstyle = {
 					style: function (feature) {
-						switch (feature.properties.Value_name_from_JSON_file) {
-							case 1:
-								return { color: '#color1' };
+						switch (feature.properties.FZ) {
+							case 0:
+								return { color: '#CAF0F8' };
+							case 1: 
+								return { color: '#00B4D8'};
+							case 2: 
+								return { color: '#0077B6'}
 						}
 					},
 					weight: 1,
@@ -280,14 +286,20 @@
 				};
 
 				tractJsonData.features.forEach((c) => {
-					var newVariable_vals = c.properties.Value_name_from_JSON_file;
+					var FZ_vals = c.properties.FZ;
 
-					if (newVariable_vals === 1) {
-						L.geoJSON(c, newVariablestyle).addTo(NewVariable_1);
+					if (FZ_vals === 0) {
+						L.geoJSON(c, FZstyle).addTo(FZ_0);
+					}
+					if (FZ_vals === 1) {
+						L.geoJSON(c, FZstyle).addTo(FZ_1);
+					}
+					if (FZ_vals === 2) {
+						L.geoJSON(c, FZstyle).addTo(FZ_2);
 					}
 				});
 
-				var newValue_Data = L.geoJSON(tractJsonData, newVariablestyle);
+				var FZ_Data = L.geoJSON(tractJsonData, FZstyle);
 
 				///////////////////
 				// Step 2 (STOP)//
