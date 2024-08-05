@@ -1008,8 +1008,8 @@
 
 	<div class="sidebar">
 		Longitude: {lng.toFixed(4)} | Latitude: {lat.toFixed(4)} | Zoom: {zoom.toFixed(2)}
-		<br />v: 1.3.2
-		<br />Last Updated: 6/27/2024
+		<br />v: 1.3.3
+		<br />Last Updated: 8/5/2024
 	</div>
 </section>
 
