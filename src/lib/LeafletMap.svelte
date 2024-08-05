@@ -742,6 +742,7 @@
 								}
 							]
 						},
+						{ label: 'Clear Selection', layer: noSites, radioGroup: 'radio' },
 
 						{
 							label: 'Data Layers',
@@ -799,13 +800,52 @@
 									]
 								},
 
+								{
+									label: 'LED',
+									selectAllCheckbox: false,
+									collapsed: true,
+									children: [
+										{
+											label: 'DCAS',
+											layer: LED_check
+										},
+										{
+											label: 'Capital',
+											layer: LED_check
+										},
+										{
+											label: 'NYPL',
+											layer: LED_check
+										},
+
+									]
+								},
+								{
+									label: 'BMS',
+									selectAllCheckbox: false,
+									collapsed: true,
+									children: [
+										{
+											label: 'DCAS',
+											layer: BMS_Check
+										},
+										{
+											label: 'Capital',
+											layer: BMS_Check
+										},
+										{
+											label: 'NYPL',
+											layer: BMS_Check
+										},
+
+									]
+								},
+
 								//////////////////
 								//Step 3 (STOP)//
 								/////////////////
 
-								{ label: 'Clear Selection', layer: noSites, radioGroup: 'radio' },
-								{ label: 'LED', layer: LED_check, radioGroup: 'radio' },
-								{ label: 'BMS', layer: BMS_Check, radioGroup: 'radio' },
+						
 								{ label: 'Electrification', layer: electric_Check, radioGroup: 'radio' },
 								{ label: 'Solar', layer: Solar_Check, radioGroup: 'radio' }
 							]
