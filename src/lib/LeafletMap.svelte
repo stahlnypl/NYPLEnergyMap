@@ -64,6 +64,7 @@
 				initialState.zoom
 			);
 
+			
 			// Setting Maximum Bounds to Focus on only NYC
 			map.setMaxBounds(map.getBounds());
 
