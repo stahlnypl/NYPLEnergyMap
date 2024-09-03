@@ -153,6 +153,11 @@
 			var FZ_1 = L.featureGroup();
 			var FZ_2 = L.featureGroup();
 			var BMS_DCAS = L.featureGroup();
+			var BMS_NYPL = L.featureGroup();
+			var BMS_CAPITAL = L.featureGroup();
+			var LED_DCAS = L.featureGroup();
+			var LED_NYPL = L.featureGroup();
+			var LED_CAPITAL = L.featureGroup();
 			//////////////////
 			// Step 1 (STOP)//
 			//////////////////
@@ -446,9 +451,33 @@
 						// console.log('EHS Button Checked!');
 					}
 
+					if (e.BMS_Funding == 'NYPL') {
+						markers[e.code].addTo(BMS_NYPL);
+						// console.log('EHS Button Checked!');
+					}
+
+					if (e.BMS_Funding == 'CAPITAL') {
+						markers[e.code].addTo(BMS_CAPITAL);
+						// console.log('EHS Button Checked!');
+					}
 
 					if (e.Electric_Complete == 'TRUE') {
 						markers[e.code].addTo(electric_Check);
+					}
+
+					if (e.LED_Funding == 'TRUE') {
+						markers[e.code].addTo(LED_DCAS);
+						// console.log('EHS Button Checked!');
+					}
+
+					if (e.LED_Funding == 'NYPL') {
+						markers[e.code].addTo(LED_NYPL);
+						// console.log('EHS Button Checked!');
+					}
+
+					if (e.LED_Funding == 'CAPITAL') {
+						markers[e.code].addTo(LED_CAPITAL);
+						// console.log('EHS Button Checked!');
 					}
 
 					if (e.Solar_Complete == 'TRUE') {
@@ -814,15 +843,15 @@
 									children: [
 										{
 											label: 'DCAS',
-											layer: LED_check
+											layer: LED_DCAS
 										},
 										{
 											label: 'Capital',
-											layer: LED_check
+											layer: LED_CAPITAL
 										},
 										{
 											label: 'NYPL',
-											layer: LED_check
+											layer: LED_NYPL
 										},
 
 									]
@@ -838,11 +867,11 @@
 										},
 										{
 											label: 'Capital',
-											layer: BMS_Check
+											layer: BMS_CAPITAL
 										},
 										{
 											label: 'NYPL',
-											layer: BMS_Check
+											layer: BMS_NYPL
 										},
 
 									]
