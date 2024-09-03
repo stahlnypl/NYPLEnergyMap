@@ -152,6 +152,7 @@
 			var FZ_0 = L.featureGroup();
 			var FZ_1 = L.featureGroup();
 			var FZ_2 = L.featureGroup();
+			var BMS_DCAS = L.featureGroup();
 			//////////////////
 			// Step 1 (STOP)//
 			//////////////////
@@ -439,6 +440,12 @@
 						markers[e.code].addTo(BMS_Check);
 						// console.log('EHS Button Checked!');
 					}
+
+					if (e.BMS_Funding == 'TRUE') {
+						markers[e.code].addTo(BMS_DCAS);
+						// console.log('EHS Button Checked!');
+					}
+
 
 					if (e.Electric_Complete == 'TRUE') {
 						markers[e.code].addTo(electric_Check);
@@ -827,7 +834,7 @@
 									children: [
 										{
 											label: 'DCAS',
-											layer: BMS_Check
+											layer: BMS_DCAS
 										},
 										{
 											label: 'Capital',
