@@ -1,21 +1,10 @@
 <script>
 	import { onMount, onDestroy } from 'svelte';
 	import { browser } from '$app/environment';
-	import { createClient } from '@supabase/supabase-js';
-	import { PUBLIC_SUPABASE_ANON_KEY } from '$env/static/public';
-	import { PUBLIC_MAPBOX_ACCESS_TOKEN } from '$env/static/public';
 	import { loadTractData } from './Components/dataLoader.js';
 
-	// Initialize Supabase client
-	const supabaseUrl = 'https://gajoxvjlmnnkkrovzwcb.supabase.co';
-	const supabaseKey = PUBLIC_SUPABASE_ANON_KEY;
-	const supabase = createClient(supabaseUrl, supabaseKey, {
-		auth: {
-			persistSession: false
-		}
-	});
-
-	// console.log('Supabase: ', supabase);
+	// Branch data is stored in this repository (static/Data/EnergyDatabase.json),
+	// a snapshot of the original Supabase table, so the map has no external database.
 
 	// Calling Empty Variables //
 	let mapElement;
@@ -68,29 +57,37 @@
 			// Setting Maximum Bounds to Focus on only NYC
 			map.setMaxBounds(map.getBounds());
 
-			// Assigning Mapbox API Token
-			var accessToken = PUBLIC_MAPBOX_ACCESS_TOKEN;
+			// Base maps: CARTO tiles (free API key, up to 5M requests/month)
+			var cartoKey = 'cb1_5bsm_1_69d69230e290e168598f1701';
+			var cartoAttribution =
+				'© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a>';
 
-			// Creating MapBox Light Theme Tile Layer
-			var lightTheme = L.tileLayer(
-				'https://api.mapbox.com/styles/v1/stahlstradamus/clrb4kx8p005v01qo3vaef7k7/tiles/{z}/{x}/{y}?access_token=' +
-					accessToken,
-				{
-					attribution:
-						'© <a href="https://www.mapbox.com/contribute/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-					maxZoom: 25
-				}
+			// Dark Theme: map without labels, plus a separate label layer that is
+			// brightened with CSS and drawn above the data layers so it stays readable
+			map.createPane('darkLabels');
+			map.getPane('darkLabels').style.zIndex = 450;
+			map.getPane('darkLabels').style.pointerEvents = 'none';
+			var darkTheme = L.layerGroup([
+				L.tileLayer(
+					'https://basemaps.cartocdn.com/rastertiles/dark_nolabels/{z}/{x}/{y}.png?key=' + cartoKey,
+					{ attribution: cartoAttribution, maxNativeZoom: 20, maxZoom: 25 }
+				),
+				L.tileLayer(
+					'https://basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}.png?key=' + cartoKey,
+					{ maxNativeZoom: 20, maxZoom: 25, pane: 'darkLabels', className: 'bright-labels' }
+				)
+			]);
+
+			// Color Theme Tile Layer (CARTO Voyager: blue water, green parks)
+			var colorTheme = L.tileLayer(
+				'https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=' + cartoKey,
+				{ attribution: cartoAttribution, maxNativeZoom: 20, maxZoom: 25 }
 			);
 
-			// Creating MapBox Dark Theme Tile Layer
-			var darkTheme = L.tileLayer(
-				'https://api.mapbox.com/styles/v1/stahlstradamus/clrb52eso006901pi7jv416qa/tiles/{z}/{x}/{y}?access_token=' +
-					accessToken,
-				{
-					attribution:
-						'© <a href="https://www.mapbox.com/contribute/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-					maxZoom: 25
-				}
+			// Night Theme Tile Layer (Voyager recolored to a dark blue-gray with CSS)
+			var nightTheme = L.tileLayer(
+				'https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=' + cartoKey,
+				{ attribution: cartoAttribution, maxNativeZoom: 20, maxZoom: 25, className: 'night-tiles' }
 			).addTo(map);
 
 			// Event listener to Display Location Data in Developer Element
@@ -102,8 +99,9 @@
 			var baseTree = {
 				label: 'Base Maps',
 				children: [
-					{ label: 'Light Theme', layer: lightTheme },
-					{ label: 'Dark Theme', layer: darkTheme }
+					{ label: 'Night Theme', layer: nightTheme },
+					{ label: 'Dark Theme', layer: darkTheme },
+					{ label: 'Color Theme', layer: colorTheme }
 				]
 			};
 
@@ -163,9 +161,10 @@
 			// Step 1 (STOP)//
 			//////////////////
 
-			// Asyncronous Function to Call Supabase Library Data
+			// Asyncronous Function to Load Library Data from this repository
 			async function fetchData() {
-				const { data } = await supabase.from('EnergyDatabase').select('*');
+				const response = await fetch('./Data/EnergyDatabase.json');
+				const data = await response.json();
 				// console.log(data);
 				return {
 					EnergyDatabase: data ?? []
@@ -198,6 +197,24 @@
 				}
 				lastZoom = zoom;
 			});
+
+			// Subway lines (MTA Subway Service Lines, data.ny.gov), drawn in official MTA colors
+			map.createPane('subway');
+			map.getPane('subway').style.zIndex = 420;
+			map.getPane('subway').style.pointerEvents = 'none';
+			var subwayLayer = L.layerGroup();
+			try {
+				const subwayResponse = await fetch('./Data/subway_lines.geojson');
+				const subwayData = await subwayResponse.json();
+				L.geoJSON(subwayData, {
+					pane: 'subway',
+					interactive: false,
+					style: (feature) => ({ color: feature.properties.color, weight: 2, opacity: 0.85 })
+				}).addTo(subwayLayer);
+			} catch (error) {
+				console.error('Error loading subway lines:', error);
+			}
+			subwayLayer.addTo(map);
 
 			const tractJsonData = await loadTractData();
 
@@ -786,6 +803,7 @@
 							selectAllCheckbox: false,
 							collapsed: false,
 							children: [
+								{ label: 'Subway Lines', layer: subwayLayer },
 								{
 									label: 'HVI',
 									selectAllCheckbox: false,
@@ -902,7 +920,7 @@
 				);
 
 				// Creating 'Close' Button
-				var CollapseBtn = `<div><img class="layerControlToggle" style="float:right;" src="https://raw.githubusercontent.com/stahlnypl/NYPLEHSMAP/main/static/Data/images/lct_button.png"></div>`;
+				var CollapseBtn = `<div><img class="layerControlToggle" style="float:right;" src="./Data/images/lct_button.png"></div>`;
 
 				// Inserting HTML for 'Close' Button into Layer Control Tree Container
 				LayerControlContainer.insertAdjacentHTML('afterbegin', CollapseBtn);
@@ -1052,6 +1070,12 @@
 
 <style>
 	@import 'leaflet/dist/leaflet.css';
+	:global(.bright-labels) {
+		filter: brightness(220%) contrast(110%);
+	}
+	:global(.night-tiles) {
+		filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(85%) saturate(70%);
+	}
 	@import 'leaflet-search/dist/leaflet-search.src.css';
 
 	section div {
